@@ -1,0 +1,6 @@
+Operatory
+=========
+
+
+Zmienne lokalne
+---------------

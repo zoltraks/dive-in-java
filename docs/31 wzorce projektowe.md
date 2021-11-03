@@ -1,0 +1,28 @@
+Wzorce projektowe
+=================
+
+## Singleton
+
+Singleton bywa uważany za antywzorzec projektowy.
+
+## 
+
+## Fabryka obiektów
+
+## Connection Pooling - Pula połączeń
+
+Wzorzec dostępu do danych, którego głównym celem jest zmniejszenie narzutu związanego z wykonywaniem i utrzymywaniem połączeń z bazą danych.
+
+Przykładowy schemat działania
+
+ * Otwarcie połączenia z bazą danych za pomocą sterownika bazy danych (JDBC)
+
+ * Otwarcie gniazda TCP do odczytu i zapisu danych (Socket)
+
+ * Inicjacja i autentykacja połączenia z serwerem bazy danych (SQL)
+
+ * Odczyt i zapis danych przez gniazdo (SQL)
+
+ * Zamykanie połączenia z serwerem bazy danych (SQL)
+
+ * Zamykanie gniazda (Socket)
