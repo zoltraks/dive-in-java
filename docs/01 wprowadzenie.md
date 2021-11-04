@@ -76,13 +76,19 @@ Języki programowania są zatem klasyfikowane do wielu paradygmatów.
 
 Popularne paradygmaty programowania:
 
-- imperatywny
+ - imperatywny
 
-- proceduralny
+ - deklaratywny
 
-- obiektowy
+ - strukturalny
 
-- refleksyjny
+ - proceduralny
+
+ - obiektowy
+
+ - funkcyjny
+
+ - refleksyjny
 
 Programowanie imperatywne
 -------------------------
@@ -90,6 +96,12 @@ Programowanie imperatywne
 Program jako sekwencja instrukcji zmieniająca stan maszyny.
 
 Przykładem może być skrypt powłoki (plik wsadowy) zawierający serię poleceń do wykonania.
+
+Programowanie deklaratywne
+--------------------------
+
+Program zdefiniowany jest w formie deklaracji tego, co należy wykonać.  
+
 
 Programowanie strukturalne
 --------------------------
@@ -106,7 +118,12 @@ Program podzielony jest na procedury.
 Programowanie obiektowe
 -----------------------
 
+W programowaniu obiektowym funkcjonalności są przypisane do określonych struktur danych poprzez klasy lub prototypy.
 
+Programowanie funkcyjne
+-----------------------
+
+Program zdefiniowany jest jako zbiór funkcji, a działania wykonywane są jako proces wyznaczania wartości tych funkcji.
 
 Programowanie refleksyjne
 -------------------------

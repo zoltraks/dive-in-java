@@ -37,15 +37,8 @@ Kod bajtowy Javy jest tłumaczony "na bieżąco" i nie jest nigdzie przechowywan
 
 Dzięki kompilacji Just-In-Time (JIT) programy Javy mogą działać "szybciej".
 
-
-
-
 Programowanie obiektowe
 -----------------------
-
-Paradygmat obiektowy .
-
-An object-oriented paradigm offers the following concepts to simplify software development and maintenance.
 
 1. Obiekty i klasy
 
@@ -53,35 +46,21 @@ Obiekty są podstawowymi jednostkami w systemie zorientowanym obiektowo składaj
 
 2. Abstrakcja i enkapsulacja
 
-The wrapping or enclosing up of data and methods into a single unit is known as encapsulation. Take medicinal capsule as an example; we don’t know what chemical it contains; we are only concerned with its effect.
-This insulation of data from direct access by the program is called data hiding. For instance, while using apps, people are concerned about their functionality and not their code.
+Klasy mogą wprowadzać pewien poziom abstrakcji, dzięki czemu kod może korzystać z funkcjonalności nie znając jej implementacji.
+
+Logika działająca na strukturach danych jest z nią ściśle powiązana, co umożliwia zabezpieczenie danych przed modyfikacją z zewnątrz eliminując błędy spowodowane niekontrolowanym dostępem do danych.
 
 3. Dziedziczenie
 
-Inheritance provides the concept of reusability; it is how objects of one class (Child class or Subclass) inherit or derive properties of objects of another class (Parent class).
+Dziedziczenie umożliwia stosowanie struktur danych oraz logiki zarówno do klasy bazowej jak i potomnych, co elimnuje konieczność powtarzania kodu.
 
 4. Poliformizm
+
+Klasy potomne mogą zmieniać zachowanie metod klasy bazowej.
 
 Przeciążanie metod (overloading).
 
 Nadpisywanie metod (overriding).
-
-
-
-Dziedziczenie
--------------
-
-
-Types of Inheritance in Java
-
-    Single Inheritance: The child class inherits properties and behavior from a single parent class.
-
-    Multilevel Inheritance: The child class inherits properties from its parent class, which in turn is a child class to another parent class.
-
-    Multiple Inheritance: When a child class has two parent classes. In Java, this concept is achieved by using interfaces.
-
-    Hierarchical Inheritance: When a parent class has two child classes inheriting its properties.
-
 
 Platforma Java
 --------------

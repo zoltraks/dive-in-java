@@ -4,6 +4,12 @@ Operatory
 Operatory matematyczne
 ----------------------
 
+``+`` dodawanie
+``-`` odejmowanie
+``*`` mnożenie
+``/`` dzielenie
+``%`` reszta
+
 Operatory relacyjne
 -------------------
 
@@ -36,6 +42,29 @@ Trójargumentowy operator logiczny
 ---------------------------------
 
 ``?:`` (tzw. Elvis).
+
+Inkrementacja i dekrementacja
+-----------------------------
+
+``++`` inkrementacja
+
+``--`` dekrementacja
+
+Postinkrementacja
+
+```java
+int x = 1;
+int y = x++;
+// x = 2, y = 1
+```
+
+Preinkrementacja
+
+```java
+int x = 1;
+int y = ++x;
+// x = 2, y = 2
+```
 
 Operator rzutowania
 -------------------

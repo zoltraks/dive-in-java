@@ -3,11 +3,13 @@ Wzorce projektowe
 
 ## Singleton
 
+Wzorzec kreacyjny, którego zadaniem jest zapewnienie istnienia jednej i tylko jednej instancji danej klasy.
+
 Singleton bywa uważany za antywzorzec projektowy.
 
-## 
+## Kompozyt
 
-## Fabryka obiektów
+## Fabryka
 
 ## Connection Pooling - Pula połączeń
 

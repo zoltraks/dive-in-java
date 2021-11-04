@@ -13,7 +13,7 @@ Jeśli człon jest zarezerwowanym słowem języka, dodaje się na końcu znak po
 
 Dla przykładu, dla domeny ``int.123.my-company.org`` odpowiadająca jej nazwa pakietu to ``org.my_company._123.int_``.
 
-Przykładowe "testowe" nazwy pakietów to ``org.example``, ``com.example`` do których dodajemy człon nazwy projektu.
+Przykładowe "testowe" nazwy pakietów to ``org.example``, ``com.example``, ``com.company`` do których dodajemy człon nazwy projektu.
 
 ```java
 package org.example.first;
