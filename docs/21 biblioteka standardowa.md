@@ -32,6 +32,10 @@ Może wywołać wyjątek ``StringIndexOutOfBoundsException``.
 
 ## ``StringBuffer``
 
+## ``ArrayList``
+
+## ``LinkedList``
+
 ## ``HashMap``
 
 ## ``Thread``

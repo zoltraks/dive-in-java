@@ -65,10 +65,17 @@ Nadpisywanie metod (overriding).
 Platforma Java
 --------------
 
-Nazwa "Java" odnosi się zarówno do nazwy języka programowania jak również środowiska w którym działają programy.
+Nazwa **Java** odnosi się zarówno do nazwy języka programowania jak również środowiska w którym działają programy.
 
-Platforma programistyczna Javy składa się z maszyny wirtualnej Java Virtual Machine (JVM) oraz z interfejsu programistycznego (API).
-API w tym przypadku jest kolekcją komponentów, których można użyć do tworzenia aplikacji oraz innych komponentów.
+Platforma programistyczna Javy składa się z maszyny wirtualnej Java Virtual Machine (**JVM**) oraz z interfejsu programistycznego (**API**).
+
+API w Javie jest w tym przypadku jest kolekcją komponentów, których można użyć do tworzenia aplikacji oraz innych komponentów.
+
+API jest instalowane wraz z platformą Javy.
+
+Do uruchamiania aplikacji wystarczy użycie platformy uruchomieniowej **JRE** (Java Runtime Environment).
+
+Do budowy aplikacji konieczne jest użycie **SDK**, które jest częścią platformy programistycznej **JDK** (Java Development Kit).  
 
 Wyróżnia się następujące platformy języka Java:
 
@@ -85,11 +92,9 @@ Wyróżnia się następujące platformy języka Java:
 Maszyna Javy
 ------------
 
-Wirtualna maszyna Javy (JVM) jest wirtualną maszyną służącą do uruchamiania programów skompilowanych do postacji kodu bajtowego Javy.
+Wirtualna maszyna Javy **JVM** (Java Virtual Machine) jest środowiskiem zapewniającym działanie programu skompilowanych do postacji kodu bajtowego Javy. Jest to implementacja maszyny wirtualnej zgodnej z założoną specyfikacją dostępną publicznie jako **Java Virtual Machine Specification**.
 
-Implementacja maszyny musi być zgodna ze specyfikacją
-
-Niektóre implementacje JVM:
+Niektóre implementacje **JVM**:
 
  - HotSpot
 
