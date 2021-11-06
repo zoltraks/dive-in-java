@@ -26,11 +26,13 @@ Zwraca znak ciągu tekstowego na pozycji liczonej od zera.
 
 Może wywołać wyjątek ``StringIndexOutOfBoundsException``.
 
-## ``Math``
-
 ## ``StringBuilder``
 
 ## ``StringBuffer``
+
+## ``CharSequence``
+
+## ``Math``
 
 ## ``ArrayList``
 

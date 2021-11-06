@@ -70,3 +70,8 @@ Definiując klasy, pola oraz metody określamy ich "widoczność" stosując sło
 | publiczny | ``public`` | TAK | TAK | TAK |   
 
 Domyślny dostęp nazywany jest także prywatnym dla pakietu (package-private).
+
+Wzorce klas
+===========
+
+Klasa 

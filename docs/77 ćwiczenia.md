@@ -9,11 +9,31 @@ Nowy projekt, zbudowanie go i uruchomienie w środowisku programistycznym.
 Lab 02
 ------
 
-Podstawy tworzenia klas: dziedziczenie oraz interfejsy.
+Podstawy tworzenia klas
+
+
+
+
+Lab 03
+------
+
+dziedziczenie oraz interfejsy.
 
 Korzystanie z obiektów posługując się interfejsami lub klasami abstrakcyjnymi.
 
 Użycie klas specjalizowanych, list oraz map.
+
+Rodzina produktów spożywczych
+
+Klasa produktu na samej górze
+
+Interfejs Eatable
+
+Klasa owocu Fruit implementująca interfejs Eatable
+
+Klasa warzywa Vegetable implementująca interfejs Eatable
+
+
 
 Lab 03
 ------
@@ -40,9 +60,21 @@ Przykładowe algorytmy:
 
  - algorytm Euklidesa (największy wspólny dzielnik)
 
-Lab 03
+Lab 04
 ------
 
+
+Lab XA
+------
+
+Algorytm Dijkstry
+
+Lab XB
+------
+
+Algorytm A*
+
+Komponenty...
 
 Wyświetlanie sekwencji obrazków
 -------------------------------

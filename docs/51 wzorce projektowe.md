@@ -11,6 +11,21 @@ Singleton bywa uważany za antywzorzec projektowy.
 
 ## Fabryka
 
+## Method chaining - Łańcuch wywołań
+
+Tworzenie metod zwracających swój obiekt, co umożliwia użycie kilku metod obiektu jedna po drugiej.
+
+## Fluent interface - Płynny interfejs
+
+Wzorzec
+
+Autorami koncepcji są Eric Evans i Martin Fowler
+
+https://depl.abcdef.wiki/wiki/Fluent_Interface
+
+
+## Budowniczy
+
 ## Connection Pooling - Pula połączeń
 
 Wzorzec dostępu do danych, którego głównym celem jest zmniejszenie narzutu związanego z wykonywaniem i utrzymywaniem połączeń z bazą danych.
