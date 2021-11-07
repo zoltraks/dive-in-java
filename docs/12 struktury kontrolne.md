@@ -47,6 +47,16 @@ while (i < 100) {
 }
 ```
 
+Pętla ``do`` ... ``while``
+--------------------------
+
+```java
+int n = 0;
+do {
+    System.out.println(++n);
+} while (n < 3);
+```
+
 Pętla ``for``
 -------------
 
@@ -76,7 +86,7 @@ Przerwanie pętli ``break``
 
 ```java
 while(true) {
-   if(someCondition == 5) {
+   if (i == 5) {
        break;
    }
 }
@@ -86,17 +96,19 @@ Kontynuacja pętli ``continue``
 ------------------------------
 
 ```java
-String[] programmers = {"Adrian", "Paul", "John", "Harry"};
+String[] programmers = {"Alice", "Jack", "Peter", "Harry"};
 
 for (String name : programmers) {
-  if (name.equals("John"))
+  if (name.equals("Jack"))
     continue;
   System.out.println(name);
 }
 ```
 
-Struktura ``try``...``catch``...``finally``
--------------------------------------------
+Struktura ``try`` ... ``catch``
+-------------------------------
+
+Blok ``catch`` umożliwia *złapanie* wyjątku.
 
 ```java
 String ageString = "abc";
@@ -108,6 +120,67 @@ try {
         System.out.println("Sorry, you can't vote yet.");
     }
 } catch (NumberFormatException ex) {
-    System.err.println("Invalid input.  '" + age_input + "' is not a valid integer.");
+    System.err.println("Invalid input. '" + ageString + "' is not a valid integer.");
 }
+```
+
+Struktura ``try`` ... ``finally``
+-----------------------------------------------
+
+Blok ``finally`` wykonywany jest zawsze mimo przerwania w bloku ``try``.
+
+```java
+String error = "";
+try {
+    for (int i = 1; i < 5; i++) {
+        if (i == 3) {
+            error = "Maximum number reached";
+            throw new Exception("Example exception");
+        }
+        System.out.println(i);
+    }
+} finally {
+    if (error.trim().length() > 0) {
+        System.out.println(String.format("Block finally: %s", error));
+    }
+}
+```
+
+```
+1
+2
+Block finally: Maximum number reached
+java.lang.Exception: Example exception
+```
+
+Struktura ``try`` ... ``catch`` ... ``finally``
+-----------------------------------------------
+
+Blok ``finally`` jest wykonywany zawsze, po zakończeniu bloku ``try`` i ewentualnie odpowiadającego wyjątkowi bloku ``catch``.
+
+```java
+String error = "";
+try {
+    for (int i = 1; i < 5; i++) {
+        if (i == 3) {
+            error = "Maximum number reached";
+            throw new Exception("Example exception");
+        }
+        System.out.println(i);
+    }
+} catch (Exception e) {
+    System.out.println("Exception handled here...");
+    e.printStackTrace();
+} finally {
+    if (error.trim().length() > 0) {
+        System.out.println(String.format("Block finally: %s", error));
+    }
+}
+```
+
+```
+1
+2
+Exception handled here...
+Block finally: Maximum number reached
 ```

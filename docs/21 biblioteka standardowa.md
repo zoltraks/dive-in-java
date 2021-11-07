@@ -18,13 +18,19 @@ As much as is reasonably practical, the hashCode method defined by class Object 
 
 ## ``String``
 
-```
+```java
 public char charAt(int index)
 ```
 
 Zwraca znak ciągu tekstowego na pozycji liczonej od zera.
 
 Może wywołać wyjątek ``StringIndexOutOfBoundsException``.
+
+```java
+public static String format(@NotNull String format, @Nullable Object... args);
+```
+
+Formatowanie tekstu przy pomocy ciągu formatującego w stylu funkcji ``printf`` znanej z języka **C**.
 
 ## ``StringBuilder``
 
