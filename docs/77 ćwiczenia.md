@@ -6,10 +6,35 @@ Lab 01
 
 Nowy projekt, zbudowanie go i uruchomienie w środowisku programistycznym.
 
+Podstawowe informacje na temat pracy w środowisku zintegrowanym.
+
 Lab 02
 ------
 
 Podstawy tworzenia klas
+
+Person
+
+
+Customer : Person
+
+Employee : Person
+
+
+Student : Person
+
+Teacher : Person
+
+
+Address
+
+
+Animal
+
+Cat : Animal
+
+Dog : Animal
+
 
 
 
