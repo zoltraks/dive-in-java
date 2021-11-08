@@ -22,11 +22,11 @@ Hierarchia klas jest odpowiednikiem struktury drzewa, gdzie "korzeniem" jest kla
 +----------------------------------------------+
 |   Samochód                                   |
 +----------------------------------------------+
-| - marka                 : String  {readOnly} |
-| - model                 : String  {readOnly} |
-| - rokProdukcji          : int     {readOnly} |
-| - numerRejestracji      : String             |
-| - przebieg              : long               |
+| + marka                 : String  {readOnly} |
+| + model                 : String  {readOnly} |
+| + rokProdukcji          : int     {readOnly} |
+| + numerRejestracji      : String             |
+| + przebieg              : long               |
 +----------------------------------------------+
 | + zwiększPrzebieg(long) : void               |
 | + wiek(int)             : int                |
@@ -54,9 +54,6 @@ Metody niestatyczne działają w kontekście instancji, do której jawnie odwoł
 
 Pola niestatyczne są cechą konkretnej instancji klasy. Każdy obiekt posiada swoje dane oddzielnie.
 
-```java
-```
-
 Modyfikatory dostępu
 --------------------
 
@@ -71,7 +68,11 @@ Definiując klasy, pola oraz metody określamy ich "widoczność" stosując sło
 
 Domyślny dostęp nazywany jest także prywatnym dla pakietu (package-private).
 
-Wzorce klas
-===========
+Podczas dokumentowania w stylu zgodnym z **UML**, modyfikatory dostępu określamy znakiem poprzedzającym nazwę pola lub metody.
 
-Klasa 
+| | |
+| - | - |
+| ``+`` | ``public``    |
+| ``-`` | ``private``   |
+| ``#`` | ``protected`` |
+| ``~`` | ``package``   |

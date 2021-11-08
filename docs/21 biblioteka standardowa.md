@@ -1,4 +1,4 @@
-# Klasy
+# Biblioteka standardowa
 
 ## ``Object``
 
@@ -50,9 +50,13 @@ Formatowanie tekstu przy pomocy ciągu formatującego w stylu funkcji ``printf``
 
 ## ``BigDecimal``
 
-# Interfejsy
+## ``Class``
 
 ## ``Runnable``
+
+Interfejs przeznaczony dla klas, których instancje są przeznaczone do działania w wątku.
+
+Składa się on tylko i wyłącznie z bezparametrowej metody ``run``, którą należy zaimplementować w klasie implementującej ten interfejs.
 
 ```java
 public void run()
@@ -77,3 +81,13 @@ public static long nanoTime()
 Zwraca bieżący czas w nanosekundach (miliardowa część sekundy).
 
 ## ``Runtime``
+
+Klasa reprezentująca środowisko uruchomieniowe w którym działa aplikacja.
+
+Istnieje tylko jeden obiekt tej klasy na czas wykonania. Nie można tworzyć obiektów tej klasy.
+
+```java
+public static Runtime getRuntime()
+```
+
+Zwraca obiekt związany z aktualnym środowiskiem uruchomieniowym w którym działa aplikacja.

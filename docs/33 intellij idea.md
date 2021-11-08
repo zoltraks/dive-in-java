@@ -6,9 +6,13 @@ Do ustawień budowania gotowego archiwum zawierającego część uruchomieniową
 
 ## Na poziomie **projektu**
 
-- Wybór SDK
+ - Wybór SDK
+
+ - Biblioteki zewnętrzne
 
 ## Na poziomie **modułu**
+
+ - Zależności biblioteczne
 
 ## Na poziomie **artefaktu**
 
@@ -52,3 +56,17 @@ Przejście do definicji lub sekcji importującej.
 ![](image/shot/shot-2031.png)
 
 ``itar``
+
+``iter``
+
+## Dodawanie zależności
+
+![](image/shot/shot-2114.png)
+
+![](image/shot/shot-2115.png)
+
+![](image/shot/shot-2116.png)
+
+![](image/shot/shot-2117.png)
+
+![](image/shot/shot-2118.png)
