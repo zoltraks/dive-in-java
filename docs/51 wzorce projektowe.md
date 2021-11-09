@@ -13,6 +13,10 @@ Dekoratory utworzone w taki sposób można ze sobą łączyć, dodając kolejne 
 
 Wzorzec strukturalny *GoF*.
 
+Klasa zawierająca jeden bądź więcej obiektów, ale implementująca taki sam interfejs jak klasa bazowa, co umożliwia użycie kompozytu tak jakby był jednym obiektem.
+
+https://en.wikipedia.org/wiki/Composite_pattern#Java
+
 ## Pyłek
 
 Wzorzec strukturalny *GoF*.
@@ -25,7 +29,11 @@ Wzorzec kreacyjny, którego zadaniem jest zapewnienie istnienia jednej i tylko j
 
 Singleton bywa uważany za antywzorzec projektowy.
 
-## Kompozyt
+## Metoda wytwórcza
+
+## Budowniczy
+
+Wzorzec kreacyjny *GoF*.
 
 ## Fabryka
 
@@ -35,13 +43,17 @@ Tworzenie metod zwracających swój obiekt, co umożliwia użycie kilku metod ob
 
 ## Fluent interface - Płynny interfejs
 
-Wzorzec
-
 Autorami koncepcji są Eric Evans i Martin Fowler
 
 https://depl.abcdef.wiki/wiki/Fluent_Interface
 
-## Budowniczy
+## Strategia
+
+Wzorzec behawioralny *GoF*.
+
+Wydzielenie logiki związanej z jakąś czynnością i przeniesienie jej do innej klasy.
+
+W klasie pierwotnej tworzony jest obiekt strategii, do którego oddelegowane zostaje konkretne działanie. Pozwala to na zmianę logiki poprzez przypisanie innego obiektu strategii w obiekcie pierwotnym.
 
 ## Prototyp
 
