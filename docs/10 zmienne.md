@@ -11,10 +11,9 @@ Możliwe jest więc użycie tej samej nazwy dla różnych zmiennych o ile zdefin
 Zmienne finalne
 ---------------
 
-Jeśli zmienna nie może zmieniać swojej wartości (czyli jest stałą), można zadeklarować ją jako finalną.
+Jeśli zmienna nie może zmieniać swojej wartości (czyli jest stałą), deklaruje się ją jako finalną.
 
 Zmienne globalne
 ----------------
 
 Zmienne zdefiniowane na zewnątrz bloku, np. jako pola w klasie, są dostępne dla wszystkich metod tej klasy.
- 

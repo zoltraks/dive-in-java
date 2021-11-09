@@ -11,7 +11,8 @@ Podstawowe informacje na temat pracy w środowisku zintegrowanym.
 Lab 02
 ------
 
-Podstawy tworzenia klas
+Podstawy tworzenia klas.
+
 
 Person
 
@@ -36,9 +37,6 @@ Cat : Animal
 Dog : Animal
 
 
-
-
-
 Lab 03
 ------
 
@@ -60,7 +58,7 @@ Klasa warzywa Vegetable implementująca interfejs Eatable
 
 
 
-Lab 03
+Lab 04
 ------
 
 Projekt realizujący porównanie kilku podstawowych algorytmów obliczeniowych.
@@ -71,7 +69,7 @@ Po wybraniu algorytmu program powinien pozwolić na wprowadzenie parametrów dla
 
 Przykładowe algorytmy:
 
- - potęgowanie metodą interacji
+ - potęgowanie metodą iteracji
 
  - potęgowanie metodą rekurencji
 
@@ -86,6 +84,10 @@ Przykładowe algorytmy:
  - algorytm Euklidesa (największy wspólny dzielnik)
 
 Lab 04
+------
+
+
+Lab 05
 ------
 
 

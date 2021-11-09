@@ -1,9 +1,13 @@
 ﻿Wprowadzenie
 ============
 
-ALGORYTMY + STRUKTURY DANYCH = PROGRAMY
+## ALGORYTMY + STRUKTURY DANYCH = PROGRAMY
 
-PROGRAMOWANIE = ROZWIĄZYWANIE PROBLEMÓW
+Program komputerowy składa się z kodu, który może być wykonany przez maszynę, w celu 
+
+
+
+## PROGRAMOWANIE = ROZWIĄZYWANIE PROBLEMÓW
 
 Wytwarzanie oprogramowania jako proces, który ma na celu dostarczenie produktu.
 
@@ -26,6 +30,16 @@ SOLID
 Programowanie komponentowe
 --------------------------
 
+W programowaniu obiektowym komponent jest blokiem konstrukcyjnym programu, który może być wielokrotnie używany, a także łączony z innymi komponentami.
+
+Komponenty są sposobem na wydzielenie funkcjonalności w formie niezależnych bloków, z których można budować rozwiązanie.
+
+Przykładem komponentu może być pole edycyjne, czy przycisk w graficznym interfejsie użytkownika, interfejs obsługi połączenia do bazy danych, czy .
+
+
+W programowaniu obiektowym i technologii obiektów rozproszonych komponent jest blokiem konstrukcyjnym programu wielokrotnego użytku, który może być łączony z innymi komponentami na tym samym lub innych komputerach w sieci rozproszonej w celu utworzenia aplikacji. Przykłady komponentów to: pojedynczy przycisk w graficznym interfejsie użytkownika, mały kalkulator odsetkowy, interfejs do menedżera bazy danych. Komponenty mogą być rozmieszczone na różnych serwerach w sieci i komunikować się ze sobą w celu świadczenia potrzebnych usług.
+
+Przetłumaczono z www.DeepL.com/Translator (wersja darmowa)
 
 In object-oriented programming and distributed object technology, a component is a reusable program building block that can be combined with other components in the same or other computers in a distributed network to form an application. Examples of a component include: a single button in a graphical user interface, a small interest calculator, an interface to a database manager. Components can be deployed on different servers in a network and communicate with each other for needed services.
 

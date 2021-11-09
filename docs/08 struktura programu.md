@@ -50,7 +50,9 @@ Plik źródłowy Javy składa się z następujących sekcji:
 
  - importowanie klas z innych pakietów ``import``
 
- - definicja klasy
+ - definicja klasy ``class``
+
+Definicja klasy obejmuje definicje pól oraz metod, czyli danych oraz funkcjonalności.
 
 Komentarze
 ----------
@@ -62,6 +64,11 @@ Komentarze wieloliniowe zaczynają się od znaku ukośnika oraz gwiazdki ``/*`` 
 Kompilator ignoruje wszystkie linie komentarza.
 
 Komentarze dokumentujące to specjalny format komentarza wieloliniowego rozpoznawanego przez środowisko zintegrowane.
+
+Importowanie
+------------
+
+Importowanie umożliwia użycie nazw klas bez konieczności podawania pełnej ścieżki zawierającej pakiet w którym klasa jest zdefiniowana.
 
 Zmienne
 -------

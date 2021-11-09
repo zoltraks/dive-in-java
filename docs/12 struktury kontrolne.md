@@ -85,8 +85,9 @@ Przerwanie pętli ``break``
 --------------------------
 
 ```java
+int i = 0;
 while(true) {
-   if (i == 5) {
+   if (++i == 5) {
        break;
    }
 }
@@ -156,7 +157,7 @@ java.lang.Exception: Example exception
 Struktura ``try`` ... ``catch`` ... ``finally``
 -----------------------------------------------
 
-Blok ``finally`` jest wykonywany zawsze, po zakończeniu bloku ``try`` i ewentualnie odpowiadającego wyjątkowi bloku ``catch``.
+Blok ``finally`` jest wykonywany zawsze, po zakończeniu bloku ``try`` i ewentualnie bloku ``catch`` odpowiadającego wyjątkowi.
 
 ```java
 String error = "";
