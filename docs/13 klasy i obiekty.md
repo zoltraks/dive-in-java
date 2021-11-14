@@ -1,5 +1,5 @@
-Klasy
-=====
+Klasy i obiekty
+===============
 
 OOP - Object Oriented Programming - Programowanie zorientowane obiektowo
 

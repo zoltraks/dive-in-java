@@ -1,6 +1,18 @@
 Tworzenie projektu
 ==================
 
+Aby rozpocząć pracę nad kodem źródłowym należy stworzyć nowy projekt lub zaimportować istniejący w środowisku zintegrowanym.
+
+Powszechnie przyjętą konwencją jest umieszczanie projektu w katalogu będącym jednocześnie repozytorium systemu kontroli wersji (VCS).
+
+Repozytoria Git są często nazywane zgodnie z konwencją "nazw internetowych", tj. słowa zaczynają się od litery i składają się tylko z małych liter oraz cyfr, zaś w nazwie oddzielane są znakiem minusa.
+
+Przykłady nazw w konwencji internetowej: **my-first-project**, **project1-ui**.
+
+Nazwy katalogów będącymi repozytoriami Git można pozostawić zgodnie z wymienoną wyżej konkwencją "nazw internetowych", ale nie jest to wymagane. Dobrze jest unikać znaku spacji, czy rozpoczynania słów od cyfry.
+
+Przykłady nazw w innej konwencji: **MyFirstProject**, **ProjectUi**.
+
 Eclipse
 -------
 
@@ -73,6 +85,8 @@ W pliku konfiguracyjnym ``netbeans.conf`` należy dodać poniższą opcję w klu
 
 IntelliJ IDEA
 -------------
+
+![](image/new-project/idea-07.png)
 
 ![](image/new-project/idea-01.png)
 

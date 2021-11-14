@@ -3,11 +3,11 @@
 
 ## ALGORYTMY + STRUKTURY DANYCH = PROGRAMY
 
-Program komputerowy składa się z kodu, który może być wykonany przez maszynę, w celu 
-
-
+Program komputerowy jest to zbiór operacji zdefiniowanych w postaci kodu, który może być wykonany przez maszynę, w celu realizacji pewnego zadania.
 
 ## PROGRAMOWANIE = ROZWIĄZYWANIE PROBLEMÓW
+
+## WYTWARZANIE OPROGRAMOWANIA
 
 Wytwarzanie oprogramowania jako proces, który ma na celu dostarczenie produktu.
 
@@ -26,6 +26,13 @@ DDD (domain driven development)
 TDD (test driven development)
 
 SOLID
+
+VCS i SCM
+---------
+
+**VCS** czyli **Version Control System** oraz **SCM** jako skrót od **Source Control Management** odnoszą się w zasadzie do tego samego, czyli systemu kontroli wersji.
+
+Zdecydowanie najbardziej powszechnym jest Git, będący zdecentralizowanym systemem, ale można spotkać się z alternatywami w postacji Subversion (SVN), czy Mercurial (HG).
 
 Programowanie komponentowe
 --------------------------
