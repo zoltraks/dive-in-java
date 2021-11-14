@@ -40,7 +40,7 @@ Dog : Animal
 Lab 03
 ------
 
-dziedziczenie oraz interfejsy.
+Dziedziczenie oraz interfejsy
 
 Korzystanie z obiektów posługując się interfejsami lub klasami abstrakcyjnymi.
 
@@ -50,13 +50,11 @@ Rodzina produktów spożywczych
 
 Klasa produktu na samej górze
 
-Interfejs Eatable
+Interfejs ``Eatable``
 
-Klasa owocu Fruit implementująca interfejs Eatable
+Klasa owocu ``Fruit`` implementująca interfejs ``Eatable``
 
-Klasa warzywa Vegetable implementująca interfejs Eatable
-
-
+Klasa warzywa ``Vegetable`` implementująca interfejs ``Eatable``
 
 Lab 04
 ------
@@ -83,27 +81,50 @@ Przykładowe algorytmy:
 
  - algorytm Euklidesa (największy wspólny dzielnik)
 
-Lab 04
-------
-
 
 Lab 05
 ------
 
+Pliki
 
-Lab XA
+Lab 06
+------
+
+Okna
+
+Lab 07
+------
+
+Wyświetlanie sekwencji obrazków
+
+https://courses.cs.washington.edu/courses/cse341/99wi/java/tutorial/ui/drawing/imageSequence.html
+
+Lab 08
+------
+
+Komponenty
+
+Lab 09
+------
+
+Wątki
+
+Lab 10
+------
+
+Połączenie sieciowe
+
+Lab 11
+------
+
+Baza danych
+
+Lab 12
 ------
 
 Algorytm Dijkstry
 
-Lab XB
+Lab 13
 ------
 
 Algorytm A*
-
-Komponenty...
-
-Wyświetlanie sekwencji obrazków
--------------------------------
-
-https://courses.cs.washington.edu/courses/cse341/99wi/java/tutorial/ui/drawing/imageSequence.html
