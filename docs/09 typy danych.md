@@ -46,4 +46,26 @@ double d = i;
 Rzutowanie zawężające
 ---------------------
 
-Ten rodzaj konwersji jest związany z możliwością utraty dokładności lub wystąpieniem wyjątku, gdyż typ wynikowy jest mniejszej dokładonści.
+Ten rodzaj konwersji jest związany z możliwością utraty dokładności, gdyż typ wynikowy jest mniejszej dokładonści.
+Wymagane jest w tym wypadku użycie jawnego operatora rzutowania.
+W przypadku przekroczenia zakresu, przyjmowana jest minimalna bądź maksymalna wartość.
+
+```java
+double nd;
+int ni;
+nd = 3.14e15;
+ni = (int)nd;
+System.out.println(nd);
+System.out.println(ni);
+nd = -3.14e15;
+ni = (int)nd;
+System.out.println(nd);
+System.out.println(ni);
+```
+
+```
+3.14E15
+2147483647
+-3.14E15
+-2147483648
+```
