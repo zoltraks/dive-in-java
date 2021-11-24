@@ -52,7 +52,7 @@ Alternatywnie można poprzedzić nazwę takiego pola znakiem podkreślenia.
 private int _MyField;
 ```
 
-Nazwa klasy abstrakcyjnej bywa poprzedzona słowem Abstract.
+Nazwa klasy abstrakcyjnej bywa poprzedzona słowem ``Abstract`` lub ``Base``.
 
 ```java
 public abstract class AbstractClassName {
@@ -73,6 +73,9 @@ public class Main {
 
 }
 ```
+
+Nazwy interfejsów są zwykłymi nazwami, ale przyjęte jest stosowanie formy przymiotnika.
+Zdarza się zatem, że dodaje się do nich końcówkę ``able``, np. ``Iterable``, ``Consumable``, ``Bookable``, choć w bibliotece standardowej znajdują się interfejsy o nazwach ``List``, ``Collection``, w odróżnieniu od konwencji znanej z języka ``C#``, gdzie nazwy interfejsów są poprzedzone literą ``I``, np. ``IList``.
 
 Komentarze
 ----------

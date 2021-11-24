@@ -11,7 +11,7 @@ Możliwe jest więc użycie tej samej nazwy dla różnych zmiennych o ile zdefin
 Zmienne finalne
 ---------------
 
-Jeśli zmienna nie może zmieniać swojej wartości (czyli jest stałą), deklaruje się ją jako finalną.
+Jeśli zmienna nie może zmieniać swojej wartości, deklaruje się ją jako finalną.
 
 Zmienne globalne
 ----------------
