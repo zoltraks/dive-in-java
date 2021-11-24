@@ -40,21 +40,31 @@ Dog : Animal
 Lab 03
 ------
 
-Dziedziczenie oraz interfejsy
+Dziedziczenie oraz interfejsy.
 
 Korzystanie z obiektów posługując się interfejsami lub klasami abstrakcyjnymi.
 
 Użycie klas specjalizowanych, list oraz map.
 
-Rodzina produktów spożywczych
+Vehicle
 
-Klasa produktu na samej górze
+Car
+Truck
+Train
+
+
+
+Rodzina produktów spożywczych.
+
+Klasa produktu na samej górze zawierająca atrybut
 
 Interfejs ``Eatable``
 
 Klasa owocu ``Fruit`` implementująca interfejs ``Eatable``
 
 Klasa warzywa ``Vegetable`` implementująca interfejs ``Eatable``
+
+
 
 Lab 04
 ------
@@ -86,6 +96,12 @@ Lab 05
 ------
 
 Pliki
+
+Otwieranie istniejącego pliku
+
+Odczyt pliku
+
+
 
 Lab 06
 ------
