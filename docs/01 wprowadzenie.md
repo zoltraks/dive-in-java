@@ -1,6 +1,8 @@
 ﻿Wprowadzenie
 ============
 
+https://bit.ly/3r8oX0w
+
 Programowanie komponentowe
 --------------------------
 
