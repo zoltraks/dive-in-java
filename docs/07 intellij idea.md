@@ -91,9 +91,11 @@ Do ustawień budowania gotowego archiwum zawierającego część uruchomieniową
 | Struktura projektu | ``File`` > ``Project structure`` |
 | Zamykanie projektu | ``File`` > ``Close project``     |
 
-## Struktura projektu
+## Parametry uruchomienia
 
+Opcjonalnie do programu podczas uruchomienia mogą zostać  przekazane parametry uruchomienia. Należy je ustawić w konfiguracji uruchomienia / odpluskwiania.
 
+![](image/shot/shot-2129.png)
 
 ## Platforma **JDK**
 
