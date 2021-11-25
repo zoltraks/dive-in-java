@@ -4,6 +4,8 @@ Wzorce klas
 Klasa POJO
 ----------
 
+Plain Old Java Object
+
 Klasa narzędziowa
 -----------------
 

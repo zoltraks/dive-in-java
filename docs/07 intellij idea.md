@@ -116,6 +116,10 @@ Wielokrotne naciśnięcie przełącza tryb wyświetlania informacji.
 
 Przejście do definicji lub sekcji importującej.
 
+### Ctrl + Alt + L
+
+Formatowanie kodu. Odpowiednik opcji menu ``Code`` > ``Reformat code``.
+
 ## Generowanie kodu
 
 ### Pętle iteracyjne

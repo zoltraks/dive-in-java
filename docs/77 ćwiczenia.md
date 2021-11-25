@@ -101,8 +101,6 @@ Otwieranie istniejącego pliku
 
 Odczyt pliku
 
-
-
 Lab 06
 ------
 

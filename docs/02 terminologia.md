@@ -113,3 +113,23 @@ Programowanie refleksyjne
 Wykonanie może być uzależnione od cech określonych w kodzie źródłowym.
 
 Dzięki mechanizmowi refleksji program w czasie wykonania ma dostęp do środowiska uruchomieniowego w celu pobierania informacji o istniejących obiektach bądź dynamicznego tworzenia nowych obiektów.
+
+
+Biblioteka
+----------
+
+Biblioteką określa się zbiór zasobów, definicji lub kodu z którego można skorzystać przy pisaniu programów.
+
+Ma to na celu umożliwienie ponownego wykorzystania danego kodu, a także uproszczenie procesu wytwarzania oprogramowania poprzez dostarczenie gotowych do użycia komponentów w kolejnych programach.
+
+Framework
+---------
+
+Szkielet służący do budowy programu. Zwykle składa się z jednej lub wielu bibliotek.
+
+VCS i SCM
+---------
+
+**VCS** czyli **Version Control System** oraz **SCM** jako skrót od **Source Control Management** odnoszą się w zasadzie do tego samego, czyli systemu kontroli wersji.
+
+Zdecydowanie najbardziej powszechnym jest Git, będący zdecentralizowanym systemem, ale można spotkać się z alternatywami w postacji Subversion (SVN), czy Mercurial (HG).

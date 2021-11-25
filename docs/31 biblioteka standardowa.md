@@ -80,6 +80,14 @@ public static long nanoTime()
 
 Zwraca bieżący czas w nanosekundach (miliardowa część sekundy).
 
+```
+public static String getProperty(String key)
+```
+
+Zwraca wartość dla określonej właściwości systemowej. Często używanymi właściwościami są "user.dir" zwracająca ścieżkę katalogu bieżącego, czy "user.home" zwracająca ścieżkę do katalogu domowego użytkownika.
+
+https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
+
 ## ``Runtime``
 
 Klasa reprezentująca środowisko uruchomieniowe w którym działa aplikacja.
@@ -91,3 +99,7 @@ public static Runtime getRuntime()
 ```
 
 Zwraca obiekt związany z aktualnym środowiskiem uruchomieniowym w którym działa aplikacja.
+
+## ``Toolkit``
+
+## ``WindowEvent``
