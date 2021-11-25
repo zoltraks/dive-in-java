@@ -14,8 +14,6 @@ public int hashCode()
 
 Ogólna zasada jest taka, że jeśli w metodzie ``equals()`` zwraca wartość ``true``, to dla obu porównywanych obiektów metoda ``hashCode()`` powinna zwrócić tę samą wartość.
 
-As much as is reasonably practical, the hashCode method defined by class Object does return distinct integers for distinct objects. (This is typically implemented by converting the internal address of the object into an integer, but this implementation technique is not required by the JavaTM programming language.)
-
 ## ``String``
 
 ```java
@@ -37,6 +35,30 @@ Formatowanie tekstu przy pomocy ciągu formatującego w stylu funkcji ``printf``
 ## ``StringBuffer``
 
 ## ``CharSequence``
+
+## ``LocalDateTime``
+
+Klasa służąca do reprezentacji daty oraz czasu.
+
+```java
+var now = LocalDateTime.now();
+System.out.println(now);
+```
+
+## ``DateTimeFormatter``
+
+Klasa służąca do obsługi formatu zapisu daty i czasu.
+
+https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
+
+```java
+var formatterFrom = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS");
+var dt = LocalDateTime.parse("2021-11-01T09:51:33.507", formatterFrom);
+System.out.println((int)(dt.getNano() / 1e6));
+var formatterTo = DateTimeFormatter.ofPattern("dd.MM.yy HH:mm:ss");
+var text = formatterTo.format(dt);
+System.out.println(text);
+```
 
 ## ``Math``
 

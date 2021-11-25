@@ -14,28 +14,37 @@ Lab 02
 Podstawy tworzenia klas.
 
 
-Person
+Klasa bazowa: ``Person``
 
+Klasa składowa: ``Address``
 
-Customer : Person
+Klasy pochodne:
 
-Employee : Person
+ - ``Customer``
 
+ - ``Employee``
 
-Student : Person
+ - ``Student``
 
-Teacher : Person
+ - ``Teacher``
 
+Klasa bazowa: ``Animal``
 
-Address
+Klasy pochodne:
 
+ - ``Cat``
 
-Animal
+ - ``Dog``
 
-Cat : Animal
+Klasa bazowa: ``Vehicle``
 
-Dog : Animal
+Klasy pochodne:
 
+- ``Car``
+
+- ``Truck``
+
+- ``Train``
 
 Lab 03
 ------
@@ -46,25 +55,15 @@ Korzystanie z obiektów posługując się interfejsami lub klasami abstrakcyjnym
 
 Użycie klas specjalizowanych, list oraz map.
 
-Vehicle
+Rodzina artykułów spożywczych.
 
-Car
-Truck
-Train
-
-
-
-Rodzina produktów spożywczych.
-
-Klasa produktu na samej górze zawierająca atrybut
+Klasa bazowa produktu ``Product``.
 
 Interfejs ``Eatable``
 
-Klasa owocu ``Fruit`` implementująca interfejs ``Eatable``
+Klasa pochodna owocu ``Fruit`` implementująca interfejs ``Eatable``
 
-Klasa warzywa ``Vegetable`` implementująca interfejs ``Eatable``
-
-
+Klasa pochodna warzywa ``Vegetable`` implementująca interfejs ``Eatable``
 
 Lab 04
 ------
@@ -97,14 +96,38 @@ Lab 05
 
 Pliki
 
-Otwieranie istniejącego pliku
+Odczyt istniejącego pliku, zapis nowego pliku.
 
-Odczyt pliku
+### Zadanie 1
+
+Program zliczający wystąpienia cyfr, liter oraz słów.
+
+Korzystając z ``System.getProperty()`` program powinien wypisać bieżącą ścieżkę roboczą.
+
+Program powinien pobrać ścieżkę dostępu do pliku z pierwszego argumentu uruchomienia i wypisać ją.
+
+Następnie powinien odczytać plik i zliczyć wystąpienia cyfr, liter oraz słów. Należy przyjąć, że słowo to ciąg składający się z co najmniej jednego *niebiałego* znaku. Wyniki należy wypisać.
+
+Plik testowy należy zapisać w katalogu roboczym programu.
+
+```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis sit amet mi ac vestibulum. Vestibulum convallis odio at cursus facilisis. Vivamus ultrices velit in arcu ornare, ut mollis tortor blandit. Nulla facilisi. Nulla placerat feugiat ipsum, eget faucibus risus scelerisque rutrum. Mauris in orci ex. Praesent ornare mauris id sodales viverra.
+
+127.0.0.1 2021 11 25
+
+Donec laoreet sagittis mollis. Nunc suscipit libero ut enim dapibus, et malesuada lectus mattis. Nunc maximus pharetra gravida. In vitae tortor justo. In mi nisi, euismod sit amet nunc et, interdum ullamcorper elit. Mauris tempor purus vel nisl vehicula tincidunt.
+```
+
+### Zadanie 2
+
+Program zapisujący do pliku bieżącą datę oraz czas z opcjonalnym przesunięciem podanym w argumencie uruchomienia jako ilość dni w przyszłość lub wstecz dla wartości ujemnych.
+
+Nazwa pliku wyjściowego powinna być podana w pierwszym parametrze uruchomienia. Opcjonalne przesunięcie powinno być pobrane z drugiego parametru uruchomienia.
 
 Lab 06
 ------
 
-Okna
+Podstawy tworzenia graficznego interfejsu użytkownika przy użyciu komponentów biblioteki ``Swing``.
 
 Lab 07
 ------
