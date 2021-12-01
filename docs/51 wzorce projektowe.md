@@ -29,6 +29,10 @@ Wzorzec kreacyjny, którego zadaniem jest zapewnienie istnienia jednej i tylko j
 
 Singleton bywa uważany za antywzorzec projektowy.
 
+## Dekorator
+
+## Adapter
+
 ## Metoda wytwórcza
 
 ## Budowniczy

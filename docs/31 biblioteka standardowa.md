@@ -122,6 +122,30 @@ public static Runtime getRuntime()
 
 Zwraca obiekt związany z aktualnym środowiskiem uruchomieniowym w którym działa aplikacja.
 
+## ``File``
+
+java.io
+
+## ``FileReader``
+
+## ``FileWriter``
+
+## ``BufferedReader``
+
+## ``BufferedWriter``
+
+## ``Files``
+
+java.nio.file
+
+## ``Path``
+
+java.nio.file
+
+## ``FileStreamReader``
+
+## ``FileStreamWriter``
+
 ## ``Toolkit``
 
 ## ``WindowEvent``

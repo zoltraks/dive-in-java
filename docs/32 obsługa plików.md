@@ -4,7 +4,10 @@ Obsługę plików zapewniają klasy ``File`` zdefiniowana w pakiecie **java.io**
 
 Obiekt klasy ``File`` może reprezentować zarówno plik jak i katalog.
 
-Do czytania i pisania zawartości można użyć klas ``FileReader`` oraz ``FileWriter``.
+Do czytania i pisania zawartości plików służą klasy ``FileReader`` oraz ``FileWriter``.
+
+Dobrym pomysłem do obsługi odczytu i zapisu plików jest użycie klas ``BufferedReader`` oraz ``BufferedWriter``.
+Klasy te są adapterami dla klas ``FileReader`` oraz ``FileWriter``.
 
 Metody klasy ``File``
 ---------------------
@@ -55,3 +58,51 @@ Tworzy katalog.
 ``createDirectories()``
 
 Tworzy katalog i wszystkie nadrzędne jeśli nie istnieją.
+
+Użycie klasy ``BufferedReader``
+-------------------------------
+
+```java
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Main {
+   public static void main(String args[]) {
+      try {
+          char[] buffer = new char[50];
+          String fileName = "file.txt";
+          FileReader fileReader = new FileReader(fileName);
+          BufferedReader bufferedReader = new BufferedReader(fileReader);
+          int count = bufferedReader.read(buffer);
+          bufferedReader.close();
+          System.out.println(String.format("Read %d characters from file %s", count, fileName));
+          System.out.println(buffer);
+      } catch (Exception x) {
+          x.printStackTrace();
+      }
+   }
+}
+```
+
+Użycie klasy ``BufferedWriter``
+-------------------------------
+
+```java
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class Main {
+  public static void main(String args[]) {
+     try {
+         String fileName = "file.txt";
+         FileWriter fileWriter = new FileWriter(fileName, true);
+         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+         String line = "Output line with some text and several data like 1234567890 or 2021-11-30\r\n";
+         bufferedWriter.append(line);
+         bufferedWriter.close();
+     } catch (Exception x) {
+         x.printStackTrace();
+     }
+  }
+}
+```
