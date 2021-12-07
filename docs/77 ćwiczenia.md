@@ -140,9 +140,16 @@ Utworzenie klasy okna aplikacji programowo.
 Lab 07
 ------
 
-Programowe utworzenie okna aplikacji, użycie klasy ``Timer`` oraz dodanie obsługi zdarzenia wyświetlenia okna.
+### Zadanie 1
 
-### Zadanie
+Programowe utworzenie i wyświetlenie okna logowania się do aplikacji.
+Okno powinno być wyświetlone na środku ekranu, zawierać etykietki "Użytkownik" oraz "Hasło" wraz z polami edycyjnymi oraz przyciski "Ok", "Zamknij".
+Przycisk "Ok" powinien być aktywny tylko w przypadku obu wypełnionych pól.
+Przycisk "Zamknij" powinien zakończyć działanie programu.
+
+### Zadanie 2
+
+Programowe utworzenie okna aplikacji, użycie klasy ``Timer`` oraz dodanie obsługi zdarzenia wyświetlenia okna.
 
 Należy utworzyć klasę okna w którym znajdzie się etykietka tekstowa oraz przycisk. Naciśnięcie przycisku powinno spowodować zamknięcie okna. Po wyświetleniu okna należy rozpocząć odliczanie i wyświetlać kolejne wartości w etykietce. Po osiągnięciu minimalnej wartości należy zatrzymać odliczanie.
 
