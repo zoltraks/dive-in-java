@@ -45,10 +45,11 @@ Komponenty
 Komponenty to elementy z których składa się graficzny interfejs użytkownika.
 Do dyspozycji jest szereg podstawowych elementów takich jak panele, pola tekstowe, nowe mogą być zdefiniowane przez programistę. Komponenty dziedziczą po klasie ``JComponent`` i układane są przez mechanizm menadżera układu (layout manager) zazwyczaj w modelu pudełkowym.
 
-| Klasa  | Nazwa    | Opis               |
-| ------ | -------- | ------------------ |
-| JPanel | Panel    | Kontener (panel)   |
-| JLabel | Etykieta | Etykietka tekstowa |
+| Klasa   | Opis                                    |
+| ------- | --------------------------------------- |
+| JPanel  | Panel (może być kontenerem)             |
+| JLabel  | Etykietka tekstowa (może być obrazkiem) |
+| JButton | Przycisk | Przycisk |
 
 Konwencje nazewnicze
 --------------------
