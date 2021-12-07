@@ -45,10 +45,10 @@ Komponenty
 Komponenty to elementy z których składa się graficzny interfejs użytkownika.
 Do dyspozycji jest szereg podstawowych elementów takich jak panele, pola tekstowe, nowe mogą być zdefiniowane przez programistę. Komponenty dziedziczą po klasie ``JComponent`` i układane są przez mechanizm menadżera układu (layout manager) zazwyczaj w modelu pudełkowym.
 
-| Klasa  | Nazwa    | Opis              |
-| ------ | -------- | ----------------- |
-| JPanel | Panel    | Kontener (panel)  |
-| JLabel | Etykieta | Etykieta tekstowa |
+| Klasa  | Nazwa    | Opis               |
+| ------ | -------- | ------------------ |
+| JPanel | Panel    | Kontener (panel)   |
+| JLabel | Etykieta | Etykietka tekstowa |
 
 Konwencje nazewnicze
 --------------------
@@ -136,20 +136,53 @@ public class Main {
 
 Po uruchomieniu programu, pojawi się okno aplikacji.
 
+Metody klasy komponentu
+-----------------------
+
+```setPrefferedSize```
+
+Określa oczekiwany rozmiar komponentu.
+
+```setComponentListener```
+
+Określa obiekt "nasłuchujący" zdarzeń takich jak zmiana widoczności, rozmiaru oraz położenia komponentu.
+
 Metody klasy okna
 -----------------
 
 ```setVisible```
 
+Ustawia widoczność okna. Należy użyć tej metody aby wyświetlić okno.
+
+Niewidoczne okno wciąż zajmuje zasoby komputera, ale ponowne wyświetlenie go jest szybkie.
+
+```setTitle```
+
+Określa nazwę okna.
+
 ```setDefaultCloseOperation```
+
+Pozwala na określenie domyślnej akcji zamknięcia okna. Najczęściej używanymi wartościami są ``JFrame.EXIT_ON_CLOSE`` dla głównego okna aplikacji oraz ``JFrame.HIDE_ON_CLOSE`` dla okien narzędziowych.
 
 ```setSize```
 
+Określa rozmiar okna, przy czym zmiana rozmiaru następuje po "upakowaniu", więc aby określić początkowy rozmiar, należy użyć tej metody już po utworzeniu układu okna lub użyć metody ``setPrefferedSize``.
+
 ```setMinimumSize```
+
+Określa minimalny rozmiar okna.
 
 ```setLocationRelativeTo```
 
+Określa pozycję okna względem innego komponentu. Można użyć wartości ``null`` aby okno było wypozycjonowane względem środka ekranu. Metodę tę należy wywoływać już po wywołaniu metody ``pack`` po wcześniejszym ustaleniu rozmiaru okna.
+
 ```setJMenuBar```
+
+Ustawia komponent menu programu, który należy wcześniej utworzyć.
+
+```dispose```
+
+Zwalnia zasoby używane przez okno oraz jego komponenty, okno staje się niedostępne i jeśli jest to ostatnie okno programu lub określona jest domyślna akcja zamknięcia na wyjście z programu, program kończy swoje działanie.
 
 Styl interfejsu użytkownika
 ---------------------------
@@ -393,3 +426,86 @@ private JMenuBar createMenu() {
 
 Menu kontekstowe
 ----------------
+
+Klasa zegara
+------------
+
+W bibliotece **Swing** zdefiniowana jest klasa ``Timer`` umożliwiająca wywołanie zdarzenia po upływie określonego czasu.
+
+Aby utworzyć obiekt zegara, należy użyć konstruktora przyjmującego dwa parametry: opóźnienia podanego w milisekundach oraz obiektu implementującego ``ActionListener``. Uruchomienie odliczania następuje po wykonaniu metody ``start`` obiektu klasy ``Timer``.
+
+Aby wyłączyć odliczanie należy użyć metody ``setRepeats`` z parametrem ``false``. Zmianę interwału można wykonać metodą ``setDelay``.
+
+https://docs.oracle.com/javase/tutorial/uiswing/misc/timer.html
+
+Menedżer układu
+---------------
+
+Na poziomie komponentu kontenera można określić klasę menedżera układu, co pozwala na zmianę sposobu w jaki pozycjonowane będą komponenty należące do kontenera.
+
+https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html
+
+W przypadku tworzenia okien przy użyciu projektanta, menedżer układu ustawia się jako właściwość komponentu **Layout Manager**.
+
+![](image/shot/shot-1055.png)
+
+W przypadku okien tworzonych bez użycia kreatora, należy posłużyć się metodą ``setLayout``.
+
+```java
+panelMain.setLayout(new BorderLayout());
+```
+
+Można używać różnych układów w różnych kontenerach, np. na poziomie głównego kontenera można zdecydować się na układ **BorderLayout**, zaś w kontenerze zajmującym centralną część użyć układu **FlowLayout**, itd.
+
+Dodając komponenty do kontenera o określonym menedżerze układu, należy użyć metody ``add`` przyjmującej jako drugi argument obiekt reprezentujący ograniczenie układu.
+
+```java
+// przykład dla BorderLayout
+panelMain.add(labelText, BorderLayout.CENTER);
+```
+
+```java
+// przykład dla FlowLayout
+panelMain.add(buttonClose, FlowLayout.TRAILING);
+```
+
+Jeśli nie zostanie zdefiniowany menedżer układu, domyślnie użytym będzie **FlowLayout**.
+
+Programowe tworzenie okien
+--------------------------
+
+O ile użycie kreatora jest dość wygodnym i w miarę szybkim sposobem na projektowanie okien, ma także swoje ograniczenia. W przypadku bardziej złożonego lub dynamicznie zmieniającego się układu użycie kreatora może się okazać kłopotliwe. W szczególności w przypadku okien opartych o kreator zmiana układu może okazać się niemożliwa, np. jeśli użyje się różnych menedżerów układu.
+
+Okna można tworzyć programowo od podstaw bez użycia kreatora.
+
+Klasa okna powinna dziedziczyć po klasie ``JFrame``, w konstruktorze należy odwołać się do konstruktora klasy bazowej oraz utworzyć co najmniej jeden komponent, który należy ustawić jako obiekt zawartości (content pane). Ostatnią operacją jest wywołanie metody ``pack``.
+
+```java
+public class MainFrame extends JFrame {
+    JPanel panelMain;
+
+    public MainFrame() {
+        super();
+        panelMain = new JPanel();
+        this.setContentPane(panelMain);
+        this.pack();
+    }
+}
+```
+
+Tak utworzone okno nie będzie miało nazwy. Nazwę tę można ustalić odwołując się do konstruktora klasy bazowej przyjmującego parametr typu ``String`` albo wywołać metodę ``setTitle``.
+
+Aby wyświetlić okno aplikacji, należy utworzyć obiekt klasy okna i wykonać metodę ``setVisible``.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        var frame = new MainFrame();
+        frame.setMinimumSize(new Dimension(200, 200));
+        frame.setSize(400, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}
+```

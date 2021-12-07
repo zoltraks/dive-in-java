@@ -7,7 +7,7 @@ Obiekt klasy ``File`` może reprezentować zarówno plik jak i katalog.
 Do czytania i pisania zawartości plików służą klasy ``FileReader`` oraz ``FileWriter``.
 
 Dobrym pomysłem do obsługi odczytu i zapisu plików jest użycie klas ``BufferedReader`` oraz ``BufferedWriter``.
-Klasy te są adapterami dla klas ``FileReader`` oraz ``FileWriter``.
+Klasy te są dekoratorami klas ``FileReader`` oraz ``FileWriter``.
 
 Metody klasy ``File``
 ---------------------

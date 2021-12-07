@@ -235,3 +235,45 @@ Przykładowy plik startowy aplikacji zawierający statyczną funkcję ``main`` p
 Katalog kompilacji to ``build``.
 
 Katalog pakietów wynikowych to ``out``.
+
+W najprostszym przypadku projekt może składać się tylko z jednego modułu.
+Domyślnie po utworzeniu nowego projektu IDE tworzy automatycznie moduł o takiej samej nazwie, tworzy katalog ``src`` i ustawia go jako katalog źródeł. Aby dostosować tę strukturę do wyżej opisanej konwencji, należy wykonać następujące operacje.
+
+Na poziomie katalogu ``src`` należy odznaczyć ten katalog aby nie był traktowany jako katalog źródeł.
+
+![](image/shot/shot-1051.png)
+
+Następnie należy utworzyć brakujące katalogi dla źródeł programu, zasobów oraz opcjonalnie testów, tzn. ``src\main\java``, ``src\main\resources`` oraz ``src\test\java`` i ``src\test\resources``.
+
+![](image/shot/shot-1052.png)
+
+Następnie katalogi te należy zaznaczyć odpowiednio jako:
+
+- katalog źródeł ``src\main\java`` jako **Sources Root**,
+- katalog zasobów ``src\main\resources`` jako **Resources Root**
+- katalog źródeł testów ``src\test\java`` jako **Test Sources Root**,
+- katalog zasobów testów ``src\test\resources`` jako **Test Resources Root**
+
+![](image/shot/shot-1053.png)
+
+Tak zaznaczone katalogi będą teraz pełniły określoną funkcjonalność, a środowisko programistyczne będzie odpowiednio z nich korzystać.
+
+![](image/shot/shot-1054.png)
+
+Dla większych projektów zawierających biblioteki lub kilka różnych programów można zdecydować się na modularyzację.
+
+W takim wypadku poszczególne moduły umieszczamy w oddzielnych katalogach na poziomie katalogu projektu. Dla każdego z katalogów powtarza się wyżej opisana struktura katalogów.
+
+```
+project \ common-library
+project \ common-library \ src \ main \ java \ ...
+project \ common-library \ src \ test \ java \ ...
+
+project \ command-utility
+project \ command-utility \ src \ main \ java \ ...
+project \ command-utility \ src \ test \ java \ ...
+
+project \ desktop-app
+project \ desktop-app \ src \ main \ java \ ...
+project \ desktop-app \ src \ test \ java \ ...
+```

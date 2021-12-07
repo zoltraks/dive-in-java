@@ -21,3 +21,5 @@ Inne
 ----
 
 https://www.samouczekprogramisty.pl/
+
+https://refactoring.guru/pl

@@ -31,7 +31,30 @@ Singleton bywa uważany za antywzorzec projektowy.
 
 ## Dekorator
 
+Wzorzec strukturalny *GoF*.
+
+Zadaniem tego wzorca jest umożliwienie dodania nowej funkcjonalności do istniejących klas w trakcie działania programu.
+
+Klasa dekoratora opakowuje oryginalną klasę poprzez dziedziczenie oraz zależność od obiektu dekorowanego.
+Obiekt dekorowany przekazuje się w konstruktorze klasy dekoratora.
+W prostym przypadku funkcje klasy bazowej w klasie dekoratora są przekazywane do obiektu dekorowanego.
+
+Dzięki takiemu podejściu możliwe jest użycie wielu dekoratorów, obiekt dekoratora można przekazać jako obiekt dekorowany dla następnego dekoratora.
+
+Umożliwia to dodanie lub zmianę funkcjonalności podobnie jak w przypadku statycznego dziedzicznia z tą różnicą, że może się to odbywać dynamicznie.
+
 ## Adapter
+
+Wzorzec strukturalny *GoF*.
+
+Klasa adaptera służy do udostępniania funkcjonalności istniejącej klasy poprzez implementację nowego interfejsu.
+
+Spotyka się dwa rodzaje implementacji tego wzorca.
+Implementacja klasowa polega na prywatnym dziedziczeniu po klasie adaptowanej i publicznej implementacji interfejsu.
+Implementacja obiektowa polega na implementacji interfejsu oraz dodaniu zależności do obiektu klasy adaptowanej.
+
+W implementacji klasowej funkcje klasy adaptowanej są zwykle wywoływane poprzez przekierowanie ich do klasy bazowej po której dziedziczy adapter.
+W implementacji obiektowej funkcje klasy adaptowanej są przekazywane do obiektu tej klasy utworzonego w ramach obiektu adaptera.  
 
 ## Metoda wytwórcza
 

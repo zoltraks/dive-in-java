@@ -129,39 +129,63 @@ Lab 06
 
 Podstawy tworzenia graficznego interfejsu użytkownika przy użyciu komponentów biblioteki ``Swing``.
 
+### Zadanie 1
+
+Utworzenie klasy okna aplikacji przy użyciu kreatora.
+
+### Zadanie 2
+
+Utworzenie klasy okna aplikacji programowo.
+
 Lab 07
 ------
 
-Wyświetlanie sekwencji obrazków
+Programowe utworzenie okna aplikacji, użycie klasy ``Timer`` oraz dodanie obsługi zdarzenia wyświetlenia okna.
 
-https://courses.cs.washington.edu/courses/cse341/99wi/java/tutorial/ui/drawing/imageSequence.html
+### Zadanie
+
+Należy utworzyć klasę okna w którym znajdzie się etykietka tekstowa oraz przycisk. Naciśnięcie przycisku powinno spowodować zamknięcie okna. Po wyświetleniu okna należy rozpocząć odliczanie i wyświetlać kolejne wartości w etykietce. Po osiągnięciu minimalnej wartości należy zatrzymać odliczanie.
+
+![](image/shot/shot-3051.png)
+
+![](image/shot/shot-3052.png)
 
 Lab 08
 ------
 
-Komponenty
+Wyświetlanie sekwencji obrazków umieszczonych w zasobach aplikacji.
 
 Lab 09
 ------
 
-Wątki
+Tworzenie własnych komponentów.
 
 Lab 10
 ------
 
-Połączenie sieciowe
+Logowanie do dziennika.
 
 Lab 11
 ------
 
-Baza danych
+Wątki.
 
 Lab 12
 ------
 
-Algorytm Dijkstry
+Połączenia sieciowe.
 
 Lab 13
 ------
 
-Algorytm A*
+Baza danych.
+
+Lab 14
+------
+
+Algorytm Dijkstry.
+
+Lab 15
+------
+
+Algorytm A*.
