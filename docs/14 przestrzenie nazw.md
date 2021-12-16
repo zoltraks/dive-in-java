@@ -1,5 +1,5 @@
-Przestrzeń nazw
-===============
+Przestrzenie nazw
+=================
 
 Przestrzeń nazw określa kontekst, w którym zdefiniowane są klasy. W obrębie danej przestrzeni, każda nazwa klasy musi być unikatowa. Dopuszczone jest istnienie tych samych nazw w różnych przestrzeniach nazw.
 
