@@ -1,4 +1,4 @@
-
+# Linki
 
 "How to Begin Thinking like a Programmer" - Andy Harris
 

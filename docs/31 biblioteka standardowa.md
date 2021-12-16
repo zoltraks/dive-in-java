@@ -68,6 +68,12 @@ System.out.println(text);
 
 ## ``HashMap``
 
+## ``Arrays``
+
+Klasa narzędziowa zawierająca funkcje działające na tablicach.
+
+Przydatną funkcją jest ``asList()`` zwracająca kolekcję ``List<>`` zawierającą elementy podane w wywołaniu funkcji.
+
 ## ``Thread``
 
 ## ``BigDecimal``
