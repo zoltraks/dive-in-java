@@ -10,27 +10,29 @@
 
 [Środowisko programistyczne](docs/05%20środowisko%20programistyczne.md)
 
-[Tworzenie projektu](docs/06%20tworzenie%20projektu.md)
+[Organizacja pracy](docs/06%20organizacja%20pracy.md)
 
-[IntelliJ IDEA](docs/07%20intellij%20idea.md)
+[Tworzenie projektu](docs/07%20tworzenie%20projektu.md)
 
-[Struktura programu](docs/08%20struktura%20programu.md)
+[IntelliJ IDEA](docs/08%20intellij%20idea.md)
 
-[Typy danych](docs/09%20typy%20danych.md)
+[Struktura programu](docs/09%20struktura%20programu.md)
 
-[Zmienne](docs/10%20zmienne.md)
+[Typy danych](docs/10%20typy%20danych.md)
 
-[Operatory](docs/11%20operatory.md)
+[Zmienne](docs/11%20zmienne.md)
 
-[Struktury kontrolne](docs/12%20struktury%20kontrolne.md)
+[Operatory](docs/12%20operatory.md)
 
-[Klasy i obiekty](docs/13%20klasy%20i%20obiekty.md)
+[Struktury kontrolne](docs/13%20struktury%20kontrolne.md)
 
-[Przestrzenie nazw](docs/14%20przestrzenie%20nazw.md)
+[Klasy i obiekty](docs/14%20klasy%20i%20obiekty.md)
 
-[Konwencje](docs/15%20konwencje.md)
+[Przestrzenie nazw](docs/15%20przestrzenie%20nazw.md)
 
-[Wzorce klas](docs/16%20wzorce%20klas.md)
+[Konwencje](docs/16%20konwencje.md)
+
+[Wzorce klas](docs/17%20wzorce%20klas.md)
 
 [Biblioteka standardowa](docs/31%20biblioteka%20standardowa.md)
 
@@ -45,8 +47,6 @@
 [Wzorce projektowe](docs/51%20wzorce%20projektowe.md)
 
 [Zagadnienia](docs/52%20zagadnienia.md)
-
-[Organizacja pracy](docs/53%20organizacja%20pracy.md)
 
 [Testy jednostkowe](docs/55%20testy%20jednostkowe.md)
 
