@@ -26,34 +26,34 @@
 
 [Klasy i obiekty](docs/13%20klasy%20i%20obiekty.md)
 
-[Przestrzenie nazw](docs\14%20przestrzenie%20nazw.md)
+[Przestrzenie nazw](docs/14%20przestrzenie%20nazw.md)
 
-[Konwencje](docs\15%20konwencje.md)
+[Konwencje](docs/15%20konwencje.md)
 
-[Wzorce klas](docs\16%20wzorce%20klas.md)
+[Wzorce klas](docs/16%20wzorce%20klas.md)
 
-[Biblioteka standardowa](docs\31%20biblioteka%20standardowa.md)
+[Biblioteka standardowa](docs/31%20biblioteka%20standardowa.md)
 
-[Obsługa plików](docs\32%20obsługa%20plików.md)
+[Obsługa plików](docs/32%20obsługa%20plików.md)
 
-[Data i czas](docs\33%20data%20i%20czas.md)
+[Data i czas](docs/33%20data%20i%20czas.md)
 
-[Biblioteki dodatkowe](docs\35%20biblioteki%20dodatkowe.md)
+[Biblioteki dodatkowe](docs/35%20biblioteki%20dodatkowe.md)
 
-[Wytwarzanie oprogramowania](docs\41%20wytwarzanie%20oprogramowania.md)
+[Wytwarzanie oprogramowania](docs/41%20wytwarzanie%20oprogramowania.md)
 
-[Wzorce projektowe](docs\51%20wzorce%20projektowe.md)
+[Wzorce projektowe](docs/51%20wzorce%20projektowe.md)
 
-[Zagadnienia](docs\52%20zagadnienia.md)
+[Zagadnienia](docs/52%20zagadnienia.md)
 
-[Organizacja pracy](docs\53%20organizacja%20pracy.md)
+[Organizacja pracy](docs/53%20organizacja%20pracy.md)
 
-[Testy jednostkowe](docs\55%20testy%20jednostkowe.md)
+[Testy jednostkowe](docs/55%20testy%20jednostkowe.md)
 
-[Graficzny interfejs użytkownika](docs\63%20graficzny%20interfejs%20użytkownika.md)
+[Graficzny interfejs użytkownika](docs/63%20graficzny%20interfejs%20użytkownika.md)
 
-[Ćwiczenia](docs\77%20ćwiczenia.md)
+[Ćwiczenia](docs/77%20ćwiczenia.md)
 
-[Narzędzia](docs\86%20narzędzia.md)
+[Narzędzia](docs/86%20narzędzia.md)
 
-[Linki](docs\88%20linki.md)
+[Linki](docs/88%20linki.md)
