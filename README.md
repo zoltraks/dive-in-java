@@ -28,9 +28,9 @@
 
 [Klasy i obiekty](docs/14%20klasy%20i%20obiekty.md)
 
-[Przestrzenie nazw](docs/15%20przestrzenie%20nazw.md)
+[Konwencje](docs/15%20konwencje.md)
 
-[Konwencje](docs/16%20konwencje.md)
+[Przestrzenie nazw](docs/16%20przestrzenie%20nazw.md)
 
 [Wzorce klas](docs/17%20wzorce%20klas.md)
 
