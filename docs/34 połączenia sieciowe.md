@@ -1,15 +1,31 @@
-# Data i czas
+# Połączenia sieciowe
 
-Konwersja ``LocalDateTime`` do ``Instant``.
+## HTTP
+
+``HttpURLConnection``
 
 ```java
-LocalDateTime localDateTime = LocalDateTime.now();
-ZoneOffset zoneOffset = ZoneId.systemDefault().getRules().getOffset(localDateTime);
-Instant instant = localDateTime.toInstant(zoneOffset);
+HttpURLConnection connection = (HttpURLConnection) new URL(MY_URL).openConnection();
 ```
 
 ```java
-LocalDateTime localDateTime = LocalDateTime.now();
-ZonedDateTime zonedDateTime = localDateTime.atZone(ZoneId.of("Europe/Warsaw");
-Instant instant = zonedDateTime.toInstant();
+InputStream inputStream = connection.getInputStream();
+String body = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
 ```
+
+``HttpClient``
+
+```java
+HttpClient client = HttpClient.newHttpClient();
+HttpRequest request = HttpRequest.newBuilder()
+    .uri(URI.create(MY_URL))
+    .build();
+```
+
+```java
+HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
+```
+
+## Źródła
+
+https://www.baeldung.com/java-http-response-body-as-string
