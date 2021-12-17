@@ -178,6 +178,16 @@ Wykonać połączenie do API pod URL http://api.zpsb.alyx.pl/ i pobrać wynik w 
 
 Wyciągnąć z tekstu znacznik czasowy "Time: RRRR-MM-DD gg:mm:ss" i wyświetlić go.
 
+```bash
+curl api.zpsb.alyx.pl
+```
+
+```
+Hello: Anonymous
+Time: 2021-12-12 13:03:11.049
+Bye: Anonymous
+```
+
 Lab 12
 ------
 
