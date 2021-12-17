@@ -40,15 +40,17 @@
 
 [Data i czas](docs/33%20data%20i%20czas.md)
 
-[Biblioteki dodatkowe](docs/35%20biblioteki%20dodatkowe.md)
+[Połączenia sieciowe](docs/34%20połączenia%20sieciowe.md)
 
-[Wytwarzanie oprogramowania](docs/41%20wytwarzanie%20oprogramowania.md)
+[Biblioteki dodatkowe](docs/42%20biblioteki%20dodatkowe.md)
 
 [Wzorce projektowe](docs/51%20wzorce%20projektowe.md)
 
 [Zagadnienia](docs/52%20zagadnienia.md)
 
 [Testy jednostkowe](docs/55%20testy%20jednostkowe.md)
+
+[Wytwarzanie oprogramowania](docs/57%20wytwarzanie%20oprogramowania.md)
 
 [Graficzny interfejs użytkownika](docs/63%20graficzny%20interfejs%20użytkownika.md)
 
