@@ -221,9 +221,62 @@ public static void main() {
 }
 ```
 
-Możliwe jest użycie więcej niż jednego obiektu używanego w strukturze ``try-with-resources``.
+Konstrukcja ta jest tłumaczona przez kompilator do formy ``try { try { } catch { } finally } catch { }``, co można sprawdzić analizując kod bajtowy.
 
-Dla wszystkich tak utworzonych obiektów zostanie wywołana metoda ``close()`` nawet w przypadku rzucenia wyjątkiem jak w podanym przykładzie.
+```java
+try {
+  SomeFunc f = new SomeFunc();
+  Throwable var1 = null;
+
+  try {
+     f.work();
+  } catch (Throwable var11) {
+     var1 = var11;
+     throw var11;
+  } finally {
+     if (f != null) {
+         if (var1 != null) {
+             try {
+                 f.close();
+             } catch (Throwable var10) {
+                 var1.addSuppressed(var10);
+             }
+         } else {
+             f.close();
+         }
+     }
+
+  }
+} catch (Exception var13) {
+  var13.printStackTrace();
+}
+```
+
+Możliwe jest użycie więcej niż jednego obiektu używanego w strukturze ``try-with-resources``.
+W takim przypadku wywołania metody ``close()`` odbywają się w odwrotnej kolejności niż ta, w której obiekty były tworzone.
+Zamykany jest najpierw ostatni obiekt, a na końcu pierwszy.
+
+Dla wszystkich tak utworzonych obiektów zostanie wywołana metoda ``close()``, a rzucone wyjątki są zbierane do pojedynczego obiektu ``Throwable`` tak jak w poniższym przykładzie.
+
+```java
+public class SomeFunc implements AutoCloseable {
+    private String name;
+
+    public void close() throws Exception {
+        System.out.println(String.format("Closing instance %s", this.name));
+        throw new Exception(String.format("Throwing exception on close %s", this.name));
+    }
+
+    public SomeFunc(String name) {
+        this.name = name;
+        System.out.println(String.format("Created instance %s", this.name));
+    }
+
+    public void work() {
+        System.out.println(String.format("Doing work %s", this.name));
+    }
+}
+```
 
 ```java
 public static void main() {
