@@ -72,8 +72,6 @@ Tworzenie metod zwracających swój obiekt, co umożliwia użycie kilku metod ob
 
 Autorami koncepcji są Eric Evans i Martin Fowler
 
-https://depl.abcdef.wiki/wiki/Fluent_Interface
-
 ## Strategia
 
 Wzorzec behawioralny *GoF*.

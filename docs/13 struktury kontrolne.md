@@ -185,3 +185,75 @@ try {
 Exception handled here...
 Block finally: Maximum number reached
 ```
+
+Struktura ``try-with-resources``
+--------------------------------
+
+Jest to specjalna konstrukcja kompilatora umożliwiająca zapewnienie wykonania specjalnej metody zamknięcia obiektu po wyjściu z bloku kodu.
+
+Obiekty utworzone w sekcji ``try`` muszą implementować interfejs ``AutoCloseable``.
+
+```java
+public class SomeFunc implements AutoCloseable {
+    @Override
+    public void close() throws Exception {
+        System.out.println("Closing instance");
+        throw new Exception("Throwing exception on close");
+    }
+
+    public SomeFunc() {
+        System.out.println("Created instance");
+    }
+
+    public void work() {
+        System.out.println("Doing work");
+    }
+}
+```
+
+```java
+public static void main() {
+  try (SomeFunc f = new SomeFunc()) {
+      f.work();
+  } catch (Exception e) {
+      e.printStackTrace();
+  }
+}
+```
+
+Możliwe jest użycie więcej niż jednego obiektu używanego w strukturze ``try-with-resources``.
+
+Dla wszystkich tak utworzonych obiektów zostanie wywołana metoda ``close()`` nawet w przypadku rzucenia wyjątkiem jak w podanym przykładzie.
+
+```java
+public static void main() {
+  try (SomeFunc f1 = new SomeFunc("Func1");
+       SomeFunc f2 = new SomeFunc("Func2");
+       SomeFunc f3 = new SomeFunc("Func3")
+  ) {
+      f1.work();
+      f2.work();
+      f3.work();
+  } catch (Exception e) {
+      e.printStackTrace();
+  }
+}
+```
+
+```
+Created instance Func1
+Created instance Func2
+Created instance Func3
+Doing work Func1
+Doing work Func2
+Doing work Func3
+Closing instance Func3
+Closing instance Func2
+Closing instance Func1
+java.lang.Exception: Throwing exception on close Func3
+	  ...
+	Suppressed: java.lang.Exception: Throwing exception on close Func2
+		... 3 more
+	Suppressed: java.lang.Exception: Throwing exception on close Func1
+		... 3 more
+```
