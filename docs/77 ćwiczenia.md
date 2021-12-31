@@ -167,20 +167,46 @@ Lab 09
 
 Tworzenie własnych komponentów.
 
-Lab 10
-------
-
-Logowanie do dziennika.
-
 Lab 11
 ------
 
-Wątki.
+Połączenia sieciowe.
+
+### Zadanie 1
+
+Wykonać połączenie do API pod URL http://api.zpsb.alyx.pl/ i pobrać wynik w formie tekstowej.
+
+Wyciągnąć z tekstu znacznik czasowy "Time: RRRR-MM-DD gg:mm:ss" i wyświetlić go.
+
+```bash
+curl api.zpsb.alyx.pl
+```
+
+```
+Hello: Anonymous
+Time: 2021-12-12 13:03:11.049
+Bye: Anonymous
+```
 
 Lab 12
 ------
 
-Połączenia sieciowe.
+Wątki.
+
+### Zadanie 1
+
+Utworzyć wątek roboczy implementujący interfejs ``Runnable`` i wykonujący pewne długotrwałe obliczenia.
+
+Wątek roboczy powinien znać nadaną sobie nazwę i posłużyć się nią do wyświetlenia informacji o uruchomieniu oraz zakończeniu pracy.
+
+Program powinien zapytać użytkownika o ilość wątków.
+
+Zadanie polega na uruchomieniu tych wątków i zakończeniu programu po zakończeniu działania wszystkich wątków.
+
+Lab 12
+------
+
+Logowanie do dziennika.
 
 Lab 13
 ------
