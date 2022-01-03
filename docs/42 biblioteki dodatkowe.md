@@ -1,6 +1,10 @@
 Biblioteki dodatkowe
 ====================
 
+## JUnit 5
+
+``org.junit.jupiter:junit-jupiter``
+
 ## Apache Commons IO
 
 ``org.apache.commons:commons-io``
