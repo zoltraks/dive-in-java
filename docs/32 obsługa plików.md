@@ -67,6 +67,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Main {
+
    public static void main(String args[]) {
       try {
           char[] buffer = new char[50];
@@ -81,6 +82,7 @@ public class Main {
           x.printStackTrace();
       }
    }
+   
 }
 ```
 
@@ -92,6 +94,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 
 public class Main {
+
   public static void main(String args[]) {
      try {
          String fileName = "file.txt";
@@ -104,5 +107,6 @@ public class Main {
          x.printStackTrace();
      }
   }
+
 }
 ```

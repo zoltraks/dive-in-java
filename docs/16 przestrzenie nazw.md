@@ -15,11 +15,13 @@ Służy do tego słowo kluczowe ``import``, którego używa się określenia naz
 package org.example.test;
 
 public class MyClass {
+
     public String Name;
 
     public MyClass(String name) {
         this.Name = name;
     }
+    
 }
 ```
 
@@ -27,11 +29,13 @@ public class MyClass {
 package org.example.test;
 
 public class OtherClass extends MyClass {
+
     public int Age;
 
     public OtherClass() {
         super("Other");
     }
+
 }
 ```
 
@@ -41,10 +45,12 @@ package org.example.test.utils;
 import org.example.test.OtherClass;
 
 public class UtilityClass {
+
     public static void Hello() {
         var x = new OtherClass();
         System.out.println(x.Name);
     }
+
 }
 ```
 

@@ -158,11 +158,16 @@ Należy utworzyć klasę okna w którym znajdzie się etykietka tekstowa oraz pr
 ![](image/shot/shot-3052.png)
 
 Lab 08
+-------
+
+Podstawy tworzenia grafiki z wykorzystaniem Swing.
+
+Lab 09
 ------
 
 Wyświetlanie sekwencji obrazków umieszczonych w zasobach aplikacji.
 
-Lab 09
+Lab 10
 ------
 
 Tworzenie własnych komponentów.
@@ -203,22 +208,12 @@ Program powinien zapytać użytkownika o ilość wątków.
 
 Zadanie polega na uruchomieniu tych wątków i zakończeniu programu po zakończeniu działania wszystkich wątków.
 
-Lab 12
+Lab 13
 ------
 
 Logowanie do dziennika.
 
-Lab 13
-------
-
-Baza danych.
-
 Lab 14
 ------
 
-Algorytm Dijkstry.
-
-Lab 15
-------
-
-Algorytm A*.
+Baza danych.
