@@ -158,21 +158,43 @@ Należy utworzyć klasę okna w którym znajdzie się etykietka tekstowa oraz pr
 ![](image/shot/shot-3052.png)
 
 Lab 08
+------
+
+Wyrażenia regularne.
+
+### Zadanie 1
+
+Stworzyć projekt aplikacji do testowania dopasowań według wzorca.
+
+Okno aplikacji powinno zawierać pole tekstowe tekstu dopasowywanego, pole kombi dla wzorca dopasowania z listą kilku gotowych wzorców (np. ``[0-9]+``, ``[a-z]+``), pola listy wyniku oraz przycisku umożliwiającego wykonanie dopasowania.
+
+![](image/shot/shot-1212.png)
+
+### Zadanie 2
+
+Utworzyć odpowiednie wyrażenia regularne dla dopasowania:
+
+ - adresu e-mail
+ - numeru telefonu
+ - nazwy hosta
+ - adresu IP
+
+Lab 09
 -------
 
 Podstawy tworzenia grafiki z wykorzystaniem Swing.
 
-Lab 09
+Lab 10
 ------
 
 Wyświetlanie sekwencji obrazków umieszczonych w zasobach aplikacji.
 
-Lab 10
+Lab 11
 ------
 
 Tworzenie własnych komponentów.
 
-Lab 11
+Lab 12
 ------
 
 Połączenia sieciowe.
@@ -193,7 +215,7 @@ Time: 2021-12-12 13:03:11.049
 Bye: Anonymous
 ```
 
-Lab 12
+Lab 13
 ------
 
 Wątki.
@@ -208,12 +230,12 @@ Program powinien zapytać użytkownika o ilość wątków.
 
 Zadanie polega na uruchomieniu tych wątków i zakończeniu programu po zakończeniu działania wszystkich wątków.
 
-Lab 13
+Lab 14
 ------
 
 Logowanie do dziennika.
 
-Lab 14
+Lab 15
 ------
 
 Baza danych.

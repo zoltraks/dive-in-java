@@ -105,6 +105,14 @@ Opcjonalnie do programu podczas uruchomienia mogą zostać  przekazane parametry
 
 ## Skróty klawiszowe edytora
 
+### Ctrl + Alt + S
+
+Przejście do ustawień środowiska.
+
+### Shift + Ctrl + Alt + S
+
+Przejście do ustawień projektu.
+
 ### Ctrl + Q
 
 Wyświetlanie dodakowej informacji w formie podpowiedzi lub zadokowanego okna dokumentacji.
@@ -121,6 +129,18 @@ Przejście do definicji lub sekcji importującej.
 ### Ctrl + Alt + L
 
 Formatowanie kodu. Odpowiednik opcji menu ``Code`` > ``Reformat code``.
+
+## Opcje edytora
+
+### Sprawdzanie pisowni
+
+Domyślnie włączone jest sprawdzanie pisowni w wartościach tekstowych oraz komentarzach.
+
+![](image/shot/shot-3009.png)
+
+Aby uniknąć podkreślania błędnie napisanych wyrazów należy wyłączyć w opcjach edytora inspekcję typu Typo w grupie Proofreading.
+
+![](image/shot/shot-3008.png)
 
 ## Generowanie kodu
 

@@ -1,5 +1,5 @@
-Zdarzenia
-=========
+Obsługa zdarzeń
+===============
 
 Załóżmy, że w projekcie okna umieszczony zostanie przycisk, a program ma odpowiednio obsłużyć akcję naciśnięcia go przez użytkownika.
 
