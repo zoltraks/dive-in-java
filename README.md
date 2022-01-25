@@ -58,13 +58,13 @@
 
 [Menedżer układu](docs/62%20menedżer%20układu.md)
 
-[Obsługa zdarzeń](docs/62%20menedżer%20układu.md)
+[Obsługa zdarzeń](docs/63%20menedżer%20układu.md)
 
-[Okna dialogowe](docs/62%20okna%20dialogowe.md)
+[Okna dialogowe](docs/66%20okna%20dialogowe.md)
 
-[Tworzenie menu](docs/62%20tworzenie%20menu.md)
+[Tworzenie menu](docs/67%20tworzenie%20menu.md)
 
-[Inne komponenty](docs/62%20inne%20komponenty.md)
+[Inne komponenty](docs/69%20inne%20komponenty.md)
 
 [Ćwiczenia](docs/77%20ćwiczenia.md)
 
