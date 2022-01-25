@@ -1,7 +1,7 @@
 Zmienne
 =======
 
-Deklaracja zmiennej w języku Java odbywa się przez zapis w formacie:
+Deklaracja zmiennej w języku Java odbywa się przez zapis w formacie znanym z języka **C**.
 
 ```
 typ_zmiennej nazwa_zmiennej = wartość zmiennej;

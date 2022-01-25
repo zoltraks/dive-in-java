@@ -1,8 +1,26 @@
 Struktura programu
 ==================
 
-Przykład
---------
+Na początek "klasyczny" przykład programu wyświetlającego tekst powitalny.
+
+```java
+package org.example.hello;
+
+public class Main {
+
+    /**
+     * Main entry point
+     *
+     * @param args Optional command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+
+}
+```
+
+Nieco rozbudowany przykład programu wyświetlającego czas bieżący w określonym formacie.
 
 ```java
 package com.company.play;
@@ -41,8 +59,12 @@ public class Main {
         var now = new Now();
         now.print();
     }
+
 }
 ```
+
+Opis
+----
 
 Plik źródłowy Javy składa się z następujących sekcji:
 
@@ -52,7 +74,7 @@ Plik źródłowy Javy składa się z następujących sekcji:
 
  - definicja klasy ``class``
 
-Definicja klasy obejmuje definicje pól oraz metod, czyli danych oraz funkcjonalności.
+Definicja klasy obejmuje definicje atrybutów (pól) oraz metod (funkcjonalności).
 
 Komentarze
 ----------
@@ -69,6 +91,3 @@ Importowanie
 ------------
 
 Importowanie umożliwia użycie nazw klas bez konieczności podawania pełnej ścieżki zawierającej pakiet w którym klasa jest zdefiniowana.
-
-Zmienne
--------

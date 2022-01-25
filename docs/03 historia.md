@@ -1,5 +1,5 @@
 ﻿Krótka historia
----------------
+===============
 
 Java została stworzona w firmie Sun Microsystems w latach 1991-1996.
 

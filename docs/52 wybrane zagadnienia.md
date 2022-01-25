@@ -1,5 +1,5 @@
-Zagadnienia
-===========
+Wybrane zagadnienia
+===================
 
 Kod defensywny
 --------------
