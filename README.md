@@ -40,6 +40,8 @@
 
 [Data i czas](docs/33%20data%20i%20czas.md)
 
+[Wyrażenia regularne](docs/34%20wyrażenia%20regularne.md)
+
 [Połączenia sieciowe](docs/35%20połączenia%20sieciowe.md)
 
 [Biblioteki dodatkowe](docs/42%20biblioteki%20dodatkowe.md)
