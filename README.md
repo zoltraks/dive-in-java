@@ -90,7 +90,7 @@ Laboratorium
 
 [Ćwiczenia](docs/71%20ćwiczenia.md)
 
-[Zadanie zaliczeniowe](docs/72%20zadanie%20zaliczeniowe.md)
+[Zadanie zaliczeniowe](docs/72%20zadanie.md)
 
 Inne
 ----
