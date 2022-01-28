@@ -181,3 +181,74 @@ public class SHA1Hashed extends Hashed
 
 Interface segregation principle
 -------------------------------
+
+Interfejsy nie powinny wymuszać implementacji funkcji, za które nie odpowiadają.
+
+```java
+public interface PasswordHasher
+{
+    String hashPassword(String password);
+    String decodePasswordFromHash(String hash);
+}
+```
+
+Interfejsy powinny być podzielone na małe, realizujące tylko określoną funkcjonalność.
+
+```java
+public interface HashDecoder
+{
+    String decodePasswordFromHash(String hash);
+}
+```
+
+```java
+public class Base64Hasher implements PasswordHasher, HashDecoder
+{
+    @Override
+    public String hashPassword(String password)
+    {
+        return "hashed with base64";
+    }
+
+    @Override
+    public String decodePasswordFromHash(String hash)
+    {
+        return "decoded from base64";
+    }
+}
+```
+
+Dependency inversion principle
+------------------------------
+
+Obiekty powinny posługiwać się abstrakcjami, a nie konkretnymi implementacjami.
+
+```java
+public class PasswordService
+{
+    private Base64Hasher hasher;
+    void hashPassword(String password)
+    {
+        hasher.hashPassword(password);
+    }
+}
+```
+
+Konkretne implementacje mogą zostać przekazane przy użyciu techniki "wstrzykiwania zależności".
+
+```java
+public class PasswordService
+{
+    private PasswordHasher passwordHasher;
+
+    public PasswordService(PasswordHasher passwordHasher)
+    {
+        this.passwordHasher = passwordHasher;
+    }
+
+    void hashPassword(String password)
+    {
+        hasher.hashPassword(password);
+    }
+}
+```
