@@ -4,7 +4,7 @@ Tworzenie menu
 Menu aplikacji
 --------------
 
-Środowisko **IntelliJ** nie wspiera niestety graficznego tworzenia menu aplikacji, jest to możliwe jedynie w wersji komercyjnej. Należy utworzyć menu programowo i wykorzystać metodę ``setJMenuBar`` klasy ``JFrame``.
+Środowisko **IntelliJ IDEA** w wersji darmowej nie wspiera graficznego tworzenia menu aplikacji. Jest to możliwe jedynie w wersji komercyjnej. Należy utworzyć menu programowo i wykorzystać metodę ``setJMenuBar`` klasy ``JFrame``.
 
 ```java
 private JMenuBar createMenu() {

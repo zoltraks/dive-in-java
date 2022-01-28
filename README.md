@@ -1,4 +1,8 @@
-# Programowanie komponentowe w języku Java
+Programowanie komponentowe w języku Java
+========================================
+
+Wprowadzenie
+------------
 
 [Wprowadzenie](docs/01%20wprowadzenie.md)
 
@@ -15,6 +19,9 @@
 [Tworzenie projektu](docs/07%20tworzenie%20projektu.md)
 
 [IntelliJ IDEA](docs/08%20intellij%20idea.md)
+
+Podstawy
+--------
 
 [Struktura programu](docs/11%20struktura%20programu.md)
 
@@ -48,27 +55,47 @@
 
 [Przykłady kodu](docs/44%20przykłady%20kodu.md)
 
+[Testy jednostkowe](docs/47%20testy%20jednostkowe.md)
+
+Zagadnienia
+-----------
+
 [Wzorce projektowe](docs/51%20wzorce%20projektowe.md)
 
 [Zagadnienia](docs/52%20wybrane%20zagadnienia.md)
 
-[Testy jednostkowe](docs/55%20testy%20jednostkowe.md)
-
 [Wytwarzanie oprogramowania](docs/57%20wytwarzanie%20oprogramowania.md)
+
+Komponenty
+----------
 
 [Interfejs użytkownika](docs/61%20interfejs%20użytkownika.md)
 
 [Menedżer układu](docs/62%20menedżer%20układu.md)
 
-[Obsługa zdarzeń](docs/63%20menedżer%20układu.md)
+[Obsługa zdarzeń](docs/63%20obsługa%20zdarzeń.md)
 
-[Okna dialogowe](docs/66%20okna%20dialogowe.md)
+[Okna dialogowe](docs/64%20okna%20dialogowe.md)
 
-[Tworzenie menu](docs/67%20tworzenie%20menu.md)
+[Tworzenie menu](docs/65%20tworzenie%20menu.md)
+
+[Tworzenie komponentu](docs/66%20tworzenie%20komponentu.md)
+
+[Funkcje graficzne](docs/67%20funkcje%20graficzne.md)
 
 [Inne komponenty](docs/69%20inne%20komponenty.md)
 
-[Ćwiczenia](docs/77%20ćwiczenia.md)
+Laboratorium
+------------
+
+[Ćwiczenia](docs/71%20ćwiczenia.md)
+
+[Zadanie zaliczeniowe](docs/72%20zadanie zaliczeniowe.md)
+
+Inne
+----
+
+[Publiczne API](docs/82%20lista%20api.md)
 
 [Narzędzia](docs/86%20narzędzia.md)
 
