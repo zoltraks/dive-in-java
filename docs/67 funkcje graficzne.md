@@ -1,15 +1,11 @@
 Funkcje graficzne
 =================
 
-https://docs.oracle.com/javase/tutorial/2d/overview/index.html
+Aby zrealizować funkcje graficzne w środowisku ``Swing`` należy przeładować metodę ``paintComponent`` komponentu w obrębie którego będzie realizowane rysowanie grafiki.
 
-https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html
+Poniższy przykład obejmuje stworzenie klasy komponentu ``Paint`` oraz klasy okna ``Frame`` zawierającego tylko jeden komponent ustawiony jako główny komponent zawartości.
 
-## Komponent rysujący
-
-Aby zrealizować funkcje graficzne w środowisku komponentów ``Swing`` należy w tym celu użyć przeładowania metody ``paintComponent`` komponentu w obrębie którego będzie realizowane rysowanie grafiki.
-
-Poniższy przykład obejmuje stworzenie klasy komponentu ``Paint`` oraz klasy okna ``Frame`` zawierającego tylko jeden komponent ustawiony jako główny komponent zawartości.  
+Aby przerysować zawartość komponentu należy użyć metody ``repaint`` klasy komponentu.
 
 ```java
 public class Main {
@@ -55,6 +51,8 @@ public class Paint extends JPanel {
 }
 ```
 
+https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html
+
 ## Kontekst graficzny
 
 Funkcje graficzne realizowane są przez obiekt reprezentujący kontekst graficzny. W metodzie ``paintComponent`` komponentu przekazywany jest obiekt ``g``.
@@ -94,12 +92,52 @@ Edytor IntelliJ IDEA może dodatkowo pokazać ikonkę koloru reprezentowanego pr
 
 ![](image/shot/shot-1062.png)
 
+## Gradienty
+
+Przy pomocy klasy ``GradientPaint`` można zdefiniować przejście koloru.
+
+```
+GradientPaint gradBlueRed = new GradientPaint(10, 10, Color.BLUE, 100, 100, Color.RED);
+g2.setPaint(gradBlueRed);
+g2.fill(new Ellipse2D.Double(10, 10, 100, 100));
+```
+
+## Teksturowanie
+
+Aby wypełnić kształt wzorem pochodzącym z danych obrazka (tekstury) należy użyć klasy ``TexturePaint``.
+
+![](image/shot/shot-1065.png)
+
+## Obrysowywanie
+
+Używając metody ``setStroke`` można określić grubość obrysu dla funkcji ``draw`` lub bardziej zaawansowany wzór wypełnienia.
+
+```java
+g2.setPaint(Color.RED);
+g2.setStroke(new BasicStroke(10));
+Shape shape = new Rectangle2D.Double(10, 10, 80, 40);
+g2.draw(shape);
+```
+
+```java
+g2.setPaint(Color.BLACK);
+float dash1[] = {3.0f};
+BasicStroke dashed = new BasicStroke(1.0f,
+        BasicStroke.CAP_BUTT,
+        BasicStroke.JOIN_MITER,
+        10.0f, dash1, 0.0f);
+g2.setStroke(dashed);
+g2.draw(new RoundRectangle2D.Double(10, 10, 150, 100, 10, 10));
+```
+
+https://docs.oracle.com/javase/tutorial/2d/geometry/strokeandfill.html
+
 ## Kształty
 
 Kształty to obiekty klas implementujących interfejs ``Shape``.
-Obiekty takie można rysować w trybie obrysu lub wypełnienia przy użyciu obiektu reprezentującego kontekst graficzny.
+Obiekty takie można rysować w trybie obrysu ``draw`` lub wypełnienia ``fill`` przy użyciu obiektu reprezentującego kontekst graficzny.
 
-### Punkt
+### Punkty
 
 Pojedynczy punkt reprezentowany jest przy użyciu klasy ``Point2D`` i jednej z jej podklas ``Double`` lub ``Float`` przeznaczonych do zastosowań, gdzie koordynaty są reprezentowane przez liczby odpowiednio podwójnej i pojedynczej precyzji.
 
@@ -126,7 +164,7 @@ g2.setPaint(Color.GREEN);
 g2.drawRect((int)p2.x, (int)p2.y, 0, 0);
 ```
 
-### Linia
+### Linie
 
 Kształt linii jest reprezentowany przez klasę ``Line2D`` w analogiczny sposób jak w przypadku klasy ``Point2D``. Tutaj również są zdefiniowane podklasy ``Double`` oraz ``Float``. Obiekty tych klas mogą być użyte w metodzie ``draw`` obiektu reprezentującego kontekst graficzny.
 
@@ -136,7 +174,7 @@ g2.setPaint(Color.YELLOW);
 g2.draw(l1);
 ```
 
-### Krzywa
+### Krzywe
 
 Do rysowania krzywych używane są klasy ``QuadCurve2D`` oraz ``CubicCurve2D``.
 
@@ -156,6 +194,99 @@ g2.draw(q);
 ```
 
 ![](image/shot/shot-1064.png)
+
+## Prostokąty
+
+Do określania prostokątów służy klasa ``Rectangle2D``.
+
+```java
+g2.setPaint(Color.RED);
+g2.setStroke(new BasicStroke(10));
+Shape shape = new Rectangle2D.Double(10, 10, 80, 40);
+g2.draw(shape);
+```
+
+![](image/shot/shot-1066.png)
+
+## Prostokąty zaokrąglone
+
+Do określania prostokątów z zaokrąglonymi rogami służy klasa ``Rectangle2D``.
+
+```java
+g2.setPaint(Color.RED);
+g2.setStroke(new BasicStroke(3));
+g2.draw(new RoundRectangle2D.Double(20, 20, 180, 140, 15, 15));
+```
+
+![](image/shot/shot-1067.png)
+
+## Elipsy
+
+Do reprezentowania kształtu elipsy służy klasa ``Ellipse2D``. Tworząc obiekt tej klasy określa się prostokąt w który wpisana zostanie elipsa. Aby uzyskać okrąg, należy zachować proporcje kwadratu.
+
+```java
+g2.setPaint(Color.RED);
+g2.draw(new Ellipse2D.Double(10, 10, 90, 90));
+```
+
+## Łuki
+
+Aby narysować wycinek elipsy lub okręgu, należy użyć klasy ``Arc2D``.
+
+```java
+g2.draw(new Arc2D.Double(10, 10, 90, 90, 0, 90, Arc2D.OPEN));
+```
+
+![](image/shot/shot-1068.png)
+
+```java
+g2.draw(new Arc2D.Double(10, 10, 90, 90, 45, 135, Arc2D.PIE));
+```
+
+![](image/shot/shot-1069.png)
+
+## Teksty
+
+Do rysowania tekstu służy metoda ``drawString``.
+
+```java
+Font font = new Font("Segoe UI", Font.BOLD, 36);
+g2.setFont(font);
+g2.setColor(Color.WHITE);
+g2.drawString("Zażółć gęślą jaźń", 0, 50);
+```
+
+
+Rysowanie tekstu odbywa się według położenia lewego górnego rogu. Do pozycjonowania można wykorzystać informację zwracaną w metodzie ``getFontMetrics``.
+
+```java
+Rectangle r = new Rectangle(20, 20, getWidth() - 40, getHeight() - 40);
+Font f = new Font("Arial", Font.PLAIN, 36);
+g2.setFont(f);
+FontMetrics m = g2.getFontMetrics();
+Rectangle2D t = m.getStringBounds(s, g2);
+
+int x = (int)((r.getWidth() - t.getWidth()) / 2);
+int y = (int)((r.getHeight()) / 2);
+
+g.drawString(s, r.x + x, r.y + y);
+```
+
+## Obrazki
+
+```java
+BufferedImage image = null;
+try {
+   ClassLoader loader = Thread.currentThread().getContextClassLoader();
+   URL url = loader.getResource("duke.png");
+   image = ImageIO.read(url);
+} catch (IOException e) {
+   e.printStackTrace();
+}
+if (image != null) {
+   g2.drawImage(image, 0, 0, this);
+}
+```
 
 ## Jakość
 

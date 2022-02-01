@@ -180,19 +180,31 @@ Utworzyć odpowiednie wyrażenia regularne dla dopasowania:
  - adresu IP
 
 Lab 09
+------
+
+Tworzenie własnych komponentów.
+
+### Zadanie
+
+Utworzyć klasę komponentu zawierającą pole etykiety tekstowej ``JLabel`` oraz okno edycyjne ``JTextField``. Komponent powinien "wystawić" publicznie funkcjonalność ustawienia tekstu etykietki oraz zawartości pola tekstowego.
+
+Utworzyć okno aplikacji zawierające kilka instancji komponentów.
+
+Lab 10
 -------
 
 Podstawy tworzenia grafiki z wykorzystaniem Swing.
 
-Lab 10
-------
+### Zadanie
 
-Wyświetlanie sekwencji obrazków umieszczonych w zasobach aplikacji.
+Utworzyć aplikację wyświetlającą okno wyświetlającej wykres znanej funkcji matematycznej, np. ``sin(α)``.
+
+Korzystając z komponentu ``Timer`` można "ożywić" wykres zmieniając parametr funkcji wykresu, np. ``sin(α + φ)``.
 
 Lab 11
 ------
 
-Tworzenie własnych komponentów.
+Wyświetlanie sekwencji obrazków umieszczonych w zasobach aplikacji.
 
 Lab 12
 ------
