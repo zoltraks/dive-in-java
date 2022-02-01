@@ -14,6 +14,13 @@
 | Frhed              | Edytor heksadecymalny   | https://sourceforge.net/projects/frhed/     |
 | Hexplorer          | Edytor heksadecymalny   | https://sourceforge.net/projects/hexplorer/ |
 
+TortoiseGit
+-----------
+
+Umożliwia wykonywanie operacji związanych z repozytorium **Git** bezpośrednio z okna eksploratora plików przy użyciu menu kontekstowego.
+
+![](image/shot/shot-1074.png)
+
 Fiddle
 ------
 
