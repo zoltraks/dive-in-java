@@ -297,3 +297,13 @@ g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIAL
 ```
 
 https://docs.oracle.com/javase/tutorial/2d/advanced/quality.html
+
+## Wydajność
+
+W przypadku gdy rysowanie obejmuje dużą ilość operacji, w celu uniknięcia efektu "migotania" można włączyć tzw. "podwójne buforowanie".
+
+```java
+RepaintManager.currentManager(this).setDoubleBufferingEnabled(true);
+```
+
+https://www.oracle.com/java/technologies/painting.html

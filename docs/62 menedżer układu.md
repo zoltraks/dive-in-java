@@ -179,6 +179,39 @@ public class MainFrame extends JFrame {
 }
 ```
 
+### GridLayout
+
+![](image/shot/shot-1049.png)
+
+Prosty menedżer układu siatki z określoną ilością kolumn i wierszy równomiernie rozłożonych.
+
+```java
+public class MainFrame extends JFrame {
+
+    public MainFrame() {
+        super();
+        setPreferredSize(new Dimension(300, 200));
+        JPanel contentPanel = new JPanel();
+        contentPanel.setLayout(new GridLayout(3, 2));
+        JLabel l1 = new JLabel("Label 1");
+        contentPanel.add(l1);
+        JLabel l2 = new JLabel("Label 2");
+        contentPanel.add(l2);
+        JLabel l3 = new JLabel("Label 3");
+        contentPanel.add(l3);
+        JLabel l4 = new JLabel("Label 4");
+        contentPanel.add(l4);
+        JLabel l5 = new JLabel("Label 5");
+        contentPanel.add(l5);
+        JLabel l6 = new JLabel("Label 6");
+        contentPanel.add(l6);
+        setContentPane(contentPanel);
+        pack();
+    }
+
+}
+```
+
 ### GridBagLayout
 
 ![](image/shot/shot-3014.png)
