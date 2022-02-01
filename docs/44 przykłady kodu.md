@@ -106,3 +106,55 @@ Najszybsza wersja z użyciem klasy **Files**
 byte[] bytes = Files.readAllBytes(Paths.get(fileName));
 String result = new String(bytes, StandardCharsets.UTF_8);
 ```
+
+## Serializacja i deserializacja JSON przy użyciu biblioteki gson
+
+```java
+Gson gson = new GsonBuilder()
+  .setPrettyPrinting()
+  .create();
+String json = gson.toJson(obj);
+```
+
+```java
+Gson gson = new GsonBuilder()
+  .setPrettyPrinting()
+  .create();
+  MyClass o = (MyClass)gson.fromJson(json, MyClass.class);
+T obj = (T)gson.fromJson(json, getClass());
+```
+
+W niektórych przypadkach, jak w przypadku klasy ``LocalDateTime`` dla poprawnej reprezentacji wartości może być konieczne dodanie klasy adaptera typu.
+
+```java
+public class LocalDateTimeAdapter extends TypeAdapter<LocalDateTime> {
+
+    private static final String FORMAT = "yyyy-MM-dd HH:mm:ss.SSS";
+
+    @Override
+    public void write(final JsonWriter jsonWriter, final LocalDateTime localDate) throws IOException {
+        if (localDate == null) {
+            jsonWriter.nullValue();
+        } else {
+            jsonWriter.value(localDate.format(DateTimeFormatter.ofPattern(FORMAT)));
+        }
+    }
+
+    @Override
+    public LocalDateTime read(final JsonReader jsonReader) throws IOException {
+        if (jsonReader.peek() == JsonToken.NULL) {
+            jsonReader.nextNull();
+            return null;
+        } else {
+            return LocalDateTime.parse(jsonReader.nextString());
+        }
+    }
+}
+```
+
+```java
+Gson gson = new GsonBuilder()
+  .setPrettyPrinting()
+  .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter().nullSafe())
+  .create();
+```
