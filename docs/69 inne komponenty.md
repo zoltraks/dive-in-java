@@ -10,4 +10,14 @@ Aby utworzyć obiekt zegara, należy użyć konstruktora przyjmującego dwa para
 
 Aby wyłączyć odliczanie należy użyć metody ``setRepeats`` z parametrem ``false``. Zmianę interwału można wykonać metodą ``setDelay``.
 
+```java
+Timer timer = new Timer(500, new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent evt) {
+        // do something...
+    }
+});
+timer.start();
+```
+
 https://docs.oracle.com/javase/tutorial/uiswing/misc/timer.html
