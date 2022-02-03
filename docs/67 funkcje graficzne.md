@@ -210,7 +210,7 @@ g2.draw(shape);
 
 ## Prostokąty zaokrąglone
 
-Do określania prostokątów z zaokrąglonymi rogami służy klasa ``Rectangle2D``.
+Do określania prostokątów z zaokrąglonymi rogami służy klasa ``RoundRectangle2D``.
 
 ```java
 g2.setPaint(Color.RED);

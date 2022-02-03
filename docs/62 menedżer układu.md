@@ -33,6 +33,136 @@ panelMain.add(buttonClose, FlowLayout.TRAILING);
 
 Jeśli nie zostanie zdefiniowany menedżer układu, domyślnie użytym będzie **FlowLayout**.
 
+### FlowLayout
+
+![](image/shot/shot-1124.png)
+
+```java
+public class MainFrame extends JFrame {
+
+    private JLabel label1;
+    private JLabel label2;
+    private JTextField text1;
+    private JTextField text2;
+    private JButton button1;
+    private JButton button2;
+    private JButton button3;
+
+    public MainFrame() {
+        super();
+        setPreferredSize(new Dimension(300, 200));
+        JPanel content = new JPanel(new FlowLayout());
+
+        label1 = new JLabel("Label 1");
+        label1.setPreferredSize(new Dimension(100, 20));
+
+        text1 = new JTextField();
+        text1.setPreferredSize(new Dimension(170, 30));
+        text1.setBackground(new Color(180, 190, 240));
+
+        label2 = new JLabel("Label 2");
+        label2.setPreferredSize(new Dimension(80, 30));
+
+        text2 = new JTextField();
+        text2.setPreferredSize(new Dimension(130, 20));
+        text2.setBackground(new Color(240, 190, 180));
+
+        button1 = new JButton("Button 1");
+        button1.setPreferredSize(new Dimension(80, 20));
+        button1.setBackground(new Color(210, 190, 230));
+
+        button2 = new JButton("Button 2");
+        button2.setPreferredSize(new Dimension(120, 30));
+        button2.setBackground(new Color(190, 240, 210));
+
+        button3 = new JButton("Button 3");
+        button3.setPreferredSize(new Dimension(100, 40));
+
+        content.add(label1);
+        content.add(text1);
+        content.add(label2);
+        content.add(text2);
+        content.add(button1);
+        content.add(button2);
+        content.add(button3);
+
+        setContentPane(content);
+        pack();
+    }
+
+}
+```
+
+Przykład z użyciem komponentu użytkownika i zmianą rozmiaru okna.
+
+```java
+public class Component extends JPanel {
+
+    private JLabel label;
+    private JTextField text;
+
+    public Component(String caption) {
+        setLayout(new BorderLayout());
+        label = new JLabel(caption);
+        label.setPreferredSize(new Dimension(80, 20));
+        text = new JTextField();
+        text.setPreferredSize(new Dimension(200, 20));
+        add(label, BorderLayout.LINE_START);
+        add(text, BorderLayout.CENTER);
+    }
+
+}
+```
+
+```java
+public class Frame extends JFrame {
+
+    public Frame() {
+        super();
+        setPreferredSize(new Dimension(300, 200));
+        JPanel content = new JPanel(new FlowLayout());
+        Component c1 = new Component("Caption 1");
+        content.add(c1);
+        Component c2 = new Component("Caption 2");
+        content.add(c2);
+        Component c3 = new Component("Caption 3");
+        content.add(c3);
+        Component c4 = new Component("Caption 4");
+        content.add(c4);
+        setContentPane(content);
+        pack();
+    }
+
+}
+```
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (UnsupportedLookAndFeelException e) {
+        } catch (ClassNotFoundException e) {
+        } catch (InstantiationException e) {
+        } catch (IllegalAccessException e) {
+        }
+
+        Frame frame = new Frame();
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+
+}
+```
+
+![](image/shot/shot-1121.png)
+
+![](image/shot/shot-1122.png)
+
+![](image/shot/shot-1123.png)
+
 ### BorderLayout
 
 ![](image/shot/shot-3011.png)
@@ -72,7 +202,7 @@ public class MainFrame extends JFrame {
         this.panelContent.add(this.buttonCenter, BorderLayout.CENTER);
 
         this.buttonLineEnd = new JButton();
-        this.buttonLineEnd.setText("LINE_START");
+        this.buttonLineEnd.setText("LINE_END");
         this.buttonLineEnd.setPreferredSize(new Dimension(150, 0));
         this.panelContent.add(this.buttonLineEnd, BorderLayout.LINE_END);
 
