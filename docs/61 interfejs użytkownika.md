@@ -242,3 +242,19 @@ try {
 } catch (IllegalAccessException e) {
 }
 ```
+
+Dostęp do komponentów z innego wątku
+-------------------------------------
+
+Ogólna zasada jest taka, że tylko wątek główny może modyfikować stan komponentów interfejsu użytkownika.
+
+W przypadku, gdy zachodzi potrzeba odwołania się do komponentów interfejsu użytkownika z poziomu innego wątku, np. zadania w tle, należy użyć metody ``invokeLater`` klasy narzędziowej ``SwingUtilities``.
+
+```java
+SwingUtilities.invokeLater(new Runnable() {
+    @Override
+    public void run() {
+      textLabel.setText("Text was changed");
+    }
+});
+```

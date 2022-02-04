@@ -227,6 +227,20 @@ Time: 2021-12-12 13:03:11.049
 Bye: Anonymous
 ```
 
+### Zadanie 2
+
+Wykonać połączenie do API pod URL http://api.zpsb.alyx.pl/json/ i pobrać wynik JSON.
+
+Wynik należy zdeserializować do obiektu i wyświetlić pola tekstowe.
+
+```json
+{
+    "time": "2022-02-02 03:14:15.926",
+    "author": "Nelson Mandela",
+    "text": "A winner is a dreamer who never gives up."
+}
+```
+
 Lab 13
 ------
 

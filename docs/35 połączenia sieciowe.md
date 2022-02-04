@@ -23,7 +23,27 @@ HttpRequest request = HttpRequest.newBuilder()
 ```
 
 ```java
-HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
+HttpResponse response = client.send(request, BodyHandlers.ofString());
+```
+
+W metodzie ``send`` możemy podać inny format odpowiedzi HTTP np. ``BodyHandlers.ofByteArray()`` lub ``BodyHandlers.ofFile()``.
+
+Bardziej zaawansowany przykład z konfiguracją klienta.
+
+```java
+HttpClient client = HttpClient.newBuilder()
+  .version(HttpClient.Version.HTTP_1_1)
+  .connectTimeout(Duration.ofSeconds(20))
+  .build();
+String url = "http://api.zpsb.alyx.pl/json/";
+HttpRequest request = HttpRequest.newBuilder()
+  .uri(new URI(url))
+  .headers("Accept", "application/json")
+  .GET()
+  .build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+System.out.println(response.statusCode());
+System.out.println(response.body());
 ```
 
 ## Źródła
