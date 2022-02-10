@@ -51,6 +51,8 @@ Podstawy
 
 [Połączenia sieciowe](docs/35%20połączenia%20sieciowe.md)
 
+[Programowanie wielowątkowe](docs/36%20programowanie%20wielowątkowe.md)
+
 [Biblioteki dodatkowe](docs/42%20biblioteki%20dodatkowe.md)
 
 [Przykłady kodu](docs/44%20przykłady%20kodu.md)

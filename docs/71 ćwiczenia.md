@@ -244,7 +244,7 @@ Wynik należy zdeserializować do obiektu i wyświetlić pola tekstowe.
 Lab 13
 ------
 
-Wątki.
+Programowanie wielowątkowe.
 
 ### Zadanie 1
 
@@ -255,6 +255,12 @@ Wątek roboczy powinien znać nadaną sobie nazwę i posłużyć się nią do wy
 Program powinien zapytać użytkownika o ilość wątków.
 
 Zadanie polega na uruchomieniu tych wątków i zakończeniu programu po zakończeniu działania wszystkich wątków.
+
+### Zadanie 2
+
+Utworzyć dwa wątki, jeden tworzący nowe komunikaty i wątek obsługi, wypisujący komunikaty na ekran.
+
+Należy użyć klasy ``Semaphore`` aby zatrzymać działanie wątku obsługi komunikatów i wznawiać jego działanie po wprowadzeniu nowych komunikatów.
 
 Lab 14
 ------
