@@ -36,6 +36,7 @@ public class Frame extends JFrame {
 ```java
 public class Paint extends JPanel {
 
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
@@ -197,7 +198,9 @@ g2.draw(q);
 
 ## Prostokąty
 
-Do określania prostokątów służy klasa ``Rectangle2D``.
+Aby określić prostokąt przy użyciu liczb całkowitych, można użyć klasy ``Rectangle``.
+
+Do określenia prostokątu przy użyciu liczb rzeczywistych służy klasa ``Rectangle2D``.
 
 ```java
 g2.setPaint(Color.RED);
@@ -255,7 +258,6 @@ g2.setFont(font);
 g2.setColor(Color.WHITE);
 g2.drawString("Zażółć gęślą jaźń", 0, 50);
 ```
-
 
 Rysowanie tekstu odbywa się według położenia lewego górnego rogu. Do pozycjonowania można wykorzystać informację zwracaną w metodzie ``getFontMetrics``.
 

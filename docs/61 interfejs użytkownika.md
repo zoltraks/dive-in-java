@@ -45,11 +45,18 @@ Komponenty
 Komponenty to elementy z których składa się graficzny interfejs użytkownika.
 Do dyspozycji jest szereg podstawowych elementów takich jak panele, pola tekstowe, nowe mogą być zdefiniowane przez programistę. Komponenty dziedziczą po klasie ``JComponent`` i układane są przez mechanizm menadżera układu (layout manager) zazwyczaj w modelu pudełkowym.
 
-| Klasa   | Opis                                    |
-| ------- | --------------------------------------- |
-| JPanel  | Panel (może być kontenerem)             |
-| JLabel  | Etykietka tekstowa (może być obrazkiem) |
-| JButton | Przycisk                                |
+| Klasa        | Opis                                              | Kontener |
+| ------------ | ------------------------------------------------- | :------: |
+| JPanel       | Panel                                             | X        |
+| JScrollPane  | Panel zawierający paski przewijania               | X        |
+| JLabel       | Etykietka tekstowa (może być obrazkiem)           |          |
+| JButton      | Przycisk                                          |          |
+| JCheckBox    | Pole zaznaczenia wyboru (pole typu check)         |          |
+| JRadioButton | Wybór jednego z wielu elementów (pole typu radio) |          |
+| JTextField   | Pole tekstowe                                     |          |
+| JTextArea    | Obszar tekstowy                                   |          |
+| HSpacer      | Odstęp poziomy                                    |          |
+| VSpacer      | Odstęp pionowy                                    |          |
 
 Konwencje nazewnicze
 --------------------
@@ -179,7 +186,7 @@ Określa minimalny rozmiar okna.
 
 ```setLocationRelativeTo```
 
-Określa pozycję okna względem innego komponentu. Można użyć wartości ``null`` aby okno było wypozycjonowane względem środka ekranu. Metodę tę należy wywoływać już po wywołaniu metody ``pack`` po wcześniejszym ustaleniu rozmiaru okna.
+Określa pozycję okna względem innego komponentu. Można użyć wartości ``null`` aby okno było wypozycjonowane względem środka ekranu. Metodę tę należy wywoływać już po wywołaniu metody ``pack`` po wcześniejszym ustaleniu rozmiaru okna, czyli wywołaniu metody ``setSize``.
 
 ```setJMenuBar```
 
