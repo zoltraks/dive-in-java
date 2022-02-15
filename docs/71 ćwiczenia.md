@@ -267,6 +267,10 @@ Lab 14
 
 Logowanie do dziennika.
 
+### Zadanie
+
+Napisać program, który wyprowadzi do pliku dziennika oraz konsoli dowolnie wybrany tekst przy uruchomieniu. Dziennik powinien być w formacie tekstowym zawierający wpisy w kolejnych liniach w formacie "czas komunikat". Przy kolejnym uruchomieniu wpis powinien zostać dopisany na koniec pliku.
+
 Lab 15
 ------
 
