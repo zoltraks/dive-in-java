@@ -116,6 +116,12 @@ Zwraca wartość dla określonej właściwości systemowej. Często używanymi w
 
 https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
 
+```
+public static String lineSeparator()
+```
+
+Zwraca kod znaku odpowiadający nowej linii zależny od systemu operacyjnego.
+
 ## ``Runtime``
 
 Klasa reprezentująca środowisko uruchomieniowe w którym działa aplikacja.

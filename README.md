@@ -53,6 +53,8 @@ Podstawy
 
 [Programowanie wielowątkowe](docs/36%20programowanie%20wielowątkowe.md)
 
+[Dziennik aplikacji](docs/37%20dziennik%20aplikacji.md)
+
 [Biblioteki dodatkowe](docs/42%20biblioteki%20dodatkowe.md)
 
 [Przykłady kodu](docs/44%20przykłady%20kodu.md)
