@@ -55,6 +55,8 @@ Podstawy
 
 [Dziennik aplikacji](docs/37%20dziennik%20aplikacji.md)
 
+[Baza danych](docs/38%20baza%20danych.md)
+
 [Biblioteki dodatkowe](docs/42%20biblioteki%20dodatkowe.md)
 
 [Przykłady kodu](docs/44%20przykłady%20kodu.md)
