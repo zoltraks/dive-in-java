@@ -89,7 +89,9 @@ public class PasswordHasher {
 }
 ```
 
-W powyższym nie jest możliwe dodanie nowej funkcjonalności poprzez zwykłe przeładowanie metody ``hashPassword`` w klasie dziedziczonej.
+W powyższym przykładzie nie jest możliwe dodanie nowej funkcjonalności poprzez zwykłe przeładowanie metody ``hashPassword`` w klasie dziedziczonej.
+
+Rozwiązaniem jest użycie interfejsu zamiast klasy.
 
 ```java
 public interface PasswordHasher
