@@ -222,6 +222,10 @@ public class Calculator {
 Konwencje projektowe
 --------------------
 
+Standardowa struktura katalogów (Standard Directory Layout).
+
+https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+
 Kod źródłowy powinien znajdować się w katalogu ``src``.
 
 Pliki źródłowe programu umieszczane są w katalogu ``src/main/java``.

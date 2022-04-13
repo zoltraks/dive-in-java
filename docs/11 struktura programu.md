@@ -1,7 +1,7 @@
 Struktura programu
 ==================
 
-Na początek "klasyczny" przykład programu wyświetlającego tekst powitalny.
+Program wyświetlający tekst powitalny.
 
 ```java
 package org.example.hello;
