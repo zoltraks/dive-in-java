@@ -274,4 +274,16 @@ Napisać program, który wyprowadzi do pliku dziennika oraz konsoli dowolnie wyb
 Lab 15
 ------
 
-Baza danych.
+Połączenie z bazą danych.
+
+### Zadanie
+
+Zbudować klasę warstwy dostępu do bazy danych (Database Access Layer) przy pomocy której można:
+
+ - nawiązać połączenie z bazą danych,
+ - utworzyć strukturę bazy danych,
+ - wybrać jeden rekord z tabeli używając klucza podstawowego,
+ - wybrać wszystkie rekordy z tabeli,
+ - zapisać nowy rekord do tabeli.
+
+Program powinien prezentować użycie wyżej wymienionych funkcjonalności w dowolny sposób.
