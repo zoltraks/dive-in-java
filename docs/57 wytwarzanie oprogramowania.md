@@ -42,7 +42,7 @@ Przykłady kodu pochodzą z artykułu [SOLID Principles With (almost) Real-Life 
 Single responsibility
 ---------------------
 
-Zasada "pojedynczej odpowiedzialności" mówi o tym, że dana klasa powinna zawierać funkcjonalność rozwiązywania tylko jednego konkretnego problemu za który jest odpowiedzialna.
+Zasada "pojedynczej odpowiedzialności" mówi o tym, że klasa powinna zawierać funkcjonalność rozwiązywania tylko jednego konkretnego problemu za który jest odpowiedzialna.
 
 ```java
 public class PasswordHasher
@@ -89,7 +89,9 @@ public class PasswordHasher {
 }
 ```
 
-W powyższym nie jest możliwe dodanie nowej funkcjonalności poprzez zwykłe przeładowanie metody ``hashPassword`` w klasie dziedziczonej.
+W powyższym przykładzie nie jest możliwe dodanie nowej funkcjonalności poprzez zwykłe przeładowanie metody ``hashPassword`` w klasie dziedziczonej.
+
+Rozwiązaniem jest użycie interfejsu zamiast klasy.
 
 ```java
 public interface PasswordHasher
